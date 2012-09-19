@@ -1,0 +1,896 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_pqNW8Pi_EeGqfYwrZBDe-Q" name="Flashcards">
+    <eAnnotations xmi:id="_px0a0Pi_EeGqfYwrZBDe-Q" source="http://www.yatta-solutions.com/umllab/codegen/codegenDirectory">
+      <details xmi:id="_px1B4Pi_EeGqfYwrZBDe-Q" key="codegenDirectory" value="/Flashcards/src"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_qWz-QPi_EeGqfYwrZBDe-Q" source="com.yattasolutions.codegen.RoundTripInformation">
+      <details xmi:id="_qWz-Qfi_EeGqfYwrZBDe-Q" key="AssociatedSourceCode" value="/Flashcards/src/com/google/appengine/demos/helloorm/AddFlight.java;1377540754/1;/Flashcards/src/com/google/appengine/demos/helloorm/DeleteFlight.java;3232696623/1;/Flashcards/src/com/google/appengine/demos/helloorm/EMF.java;1515962535/1;/Flashcards/src/com/google/appengine/demos/helloorm/GetFlight.java;4278939015/1;/Flashcards/src/com/google/appengine/demos/helloorm/GetFlights.java;651582873/1;/Flashcards/src/com/google/appengine/demos/helloorm/HTMLHelper.java;1693751326/1;/Flashcards/src/com/google/appengine/demos/helloorm/PMF.java;132693610/1;/Flashcards/src/com/google/appengine/demos/helloorm/PersistenceStandard.java;3448738122/1;/Flashcards/src/com/google/appengine/demos/helloorm/UpdateFlight.java;3268807297/1;/Flashcards/src/com/google/appengine/demos/helloorm/UpdatePersistenceStandard.java;2437922853/1;/Flashcards/src/com/google/appengine/demos/helloorm/Flashcard.java;2756726022/1;"/>
+    </eAnnotations>
+    <elementImport xmi:id="_qJBZ4Pi_EeGqfYwrZBDe-Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_qJBZ4fi_EeGqfYwrZBDe-Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_qJBZ4vi_EeGqfYwrZBDe-Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_qJCA8Pi_EeGqfYwrZBDe-Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_qJCA8fi_EeGqfYwrZBDe-Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_qJCA8vi_EeGqfYwrZBDe-Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_qJCA8_i_EeGqfYwrZBDe-Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_qJCA9Pi_EeGqfYwrZBDe-Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_qJCoAPi_EeGqfYwrZBDe-Q">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_qDL3oPi_EeGqfYwrZBDe-Q" name="com">
+      <packagedElement xmi:type="uml:Package" xmi:id="_qDMesPi_EeGqfYwrZBDe-Q" name="google">
+        <packagedElement xmi:type="uml:Package" xmi:id="_qDMesfi_EeGqfYwrZBDe-Q" name="appengine">
+          <packagedElement xmi:type="uml:Package" xmi:id="_qDMesvi_EeGqfYwrZBDe-Q" name="demos">
+            <packagedElement xmi:type="uml:Package" xmi:id="_qDahIPi_EeGqfYwrZBDe-Q" name="helloorm">
+              <packagedElement xmi:type="uml:Class" xmi:id="_qI-9oPi_EeGqfYwrZBDe-Q" name="AddFlight">
+                <ownedComment xmi:id="_qVQfEPi_EeGqfYwrZBDe-Q">
+                  <body>@author Max Ross &lt;maxr@google.com></body>
+                </ownedComment>
+                <generalization xmi:id="_qSVG4Pi_EeGqfYwrZBDe-Q" general="_qP_kkPi_EeGqfYwrZBDe-Q"/>
+                <ownedAttribute xmi:id="_qT07sPi_EeGqfYwrZBDe-Q" name="response" visibility="private" type="_qQBZwfi_EeGqfYwrZBDe-Q" association="_qVvAMPi_EeGqfYwrZBDe-Q"/>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qUiGUPi_EeGqfYwrZBDe-Q" name="doPost" specification="_qSKHwPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qUiGUfi_EeGqfYwrZBDe-Q" name="req" type="_qQALofi_EeGqfYwrZBDe-Q"/>
+                  <ownedParameter xmi:id="_qUiGUvi_EeGqfYwrZBDe-Q" name="resp" type="_qQBZwfi_EeGqfYwrZBDe-Q"/>
+                  <language>java</language>
+                  <body>String orig = req.getParameter(&quot;orig&quot;);
+ String dest = req.getParameter(&quot;dest&quot;);
+ Flashcard f = new Flashcard(orig, dest);
+ response = resp;
+ if (PersistenceStandard.get() == PersistenceStandard.JPA) {
+   doPostJPA(f);
+ } else {
+   doPostJDO(f);
+ }
+//    resp.sendRedirect(&quot;/&quot;);
+  </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qUjUcPi_EeGqfYwrZBDe-Q" name="doPostJDO" specification="_qQEdEPi_EeGqfYwrZBDe-Q">
+                  <language>java</language>
+                  <body>PersistenceManager pm = PMF.get().getPersistenceManager();
+ try {
+   pm.makePersistent(f);
+ } finally {
+   pm.close();
+   
+   response.sendRedirect(&quot;/&quot;);
+ }
+
+  </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qUj7gPi_EeGqfYwrZBDe-Q" name="doPostJPA" specification="_qQGSQPi_EeGqfYwrZBDe-Q">
+                  <language>java</language>
+                  <body>EntityManager em = EMF.get().createEntityManager();
+ try {
+   em.persist(f);
+ } finally {
+ 	em.refresh(f);
+ 	em.close();
+   
+   response.sendRedirect(&quot;/getFlight?key=&quot;+f.getId());
+
+ }
+  </body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_qQEdEPi_EeGqfYwrZBDe-Q" name="doPostJDO" visibility="private" method="_qUjUcPi_EeGqfYwrZBDe-Q" raisedException="_qP8hQPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qUjUcfi_EeGqfYwrZBDe-Q" name="f" type="_qJqTEPi_EeGqfYwrZBDe-Q"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_qQGSQPi_EeGqfYwrZBDe-Q" name="doPostJPA" visibility="private" method="_qUj7gPi_EeGqfYwrZBDe-Q" raisedException="_qP8hQPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qUj7gfi_EeGqfYwrZBDe-Q" name="f" type="_qJqTEPi_EeGqfYwrZBDe-Q"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_qSKHwPi_EeGqfYwrZBDe-Q" name="doPost" method="_qUiGUPi_EeGqfYwrZBDe-Q" raisedException="_qP8hQPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qSKu0Pi_EeGqfYwrZBDe-Q" name="req" type="_qQALofi_EeGqfYwrZBDe-Q"/>
+                  <ownedParameter xmi:id="_qSKu0fi_EeGqfYwrZBDe-Q" name="resp" type="_qQBZwfi_EeGqfYwrZBDe-Q"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_qJU74Pi_EeGqfYwrZBDe-Q" name="DeleteFlight">
+                <ownedComment xmi:id="_qVRGIPi_EeGqfYwrZBDe-Q">
+                  <body>@author Max Ross &lt;maxr@google.com></body>
+                </ownedComment>
+                <generalization xmi:id="_qSb0kPi_EeGqfYwrZBDe-Q" general="_qP_kkPi_EeGqfYwrZBDe-Q"/>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qUlwsPi_EeGqfYwrZBDe-Q" name="doPost" specification="_qSZ_YPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qUlwsfi_EeGqfYwrZBDe-Q" name="req" type="_qQALofi_EeGqfYwrZBDe-Q"/>
+                  <ownedParameter xmi:id="_qUlwsvi_EeGqfYwrZBDe-Q" name="resp" type="_qQBZwfi_EeGqfYwrZBDe-Q"/>
+                  <language>java</language>
+                  <body>String key = req.getParameter(&quot;key&quot;);
+ if (key == null) {
+   resp.getWriter().println(&quot;No key provided.&quot;);
+ }
+ if (PersistenceStandard.get() == PersistenceStandard.JPA) {
+   doPostJPA(Long.valueOf(key));
+ } else {
+   doPostJDO(Long.valueOf(key));
+ }
+ resp.sendRedirect(&quot;/&quot;);
+  </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qUmXwPi_EeGqfYwrZBDe-Q" name="doPostJDO" specification="_qJX_MPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qUmXwfi_EeGqfYwrZBDe-Q" name="key">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>PersistenceManager pm = PMF.get().getPersistenceManager();
+ try {
+   Flashcard f = pm.getObjectById(Flashcard.class, key);
+   pm.deletePersistent(f);
+ } finally {
+   if (pm.currentTransaction().isActive()) {
+     pm.currentTransaction().rollback();
+   }
+   pm.close();
+ }
+  </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qUm-0Pi_EeGqfYwrZBDe-Q" name="doPostJPA" specification="_qJZ0YPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qUm-0fi_EeGqfYwrZBDe-Q" name="key">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>EntityManager em = EMF.get().createEntityManager();
+ try {
+   Flashcard f = em.find(Flashcard.class, key);
+   em.remove(f);
+ } finally {
+   em.close();
+ }
+  </body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_qJX_MPi_EeGqfYwrZBDe-Q" name="doPostJDO" visibility="private" method="_qUmXwPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qJX_Mfi_EeGqfYwrZBDe-Q" name="key">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_qJZ0YPi_EeGqfYwrZBDe-Q" name="doPostJPA" visibility="private" method="_qUm-0Pi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qJZ0Yfi_EeGqfYwrZBDe-Q" name="key">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_qSZ_YPi_EeGqfYwrZBDe-Q" name="doPost" method="_qUlwsPi_EeGqfYwrZBDe-Q" raisedException="_qP8hQPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qSamcPi_EeGqfYwrZBDe-Q" name="req" type="_qQALofi_EeGqfYwrZBDe-Q"/>
+                  <ownedParameter xmi:id="_qSamcfi_EeGqfYwrZBDe-Q" name="resp" type="_qQBZwfi_EeGqfYwrZBDe-Q"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_qJhwMPi_EeGqfYwrZBDe-Q" name="EMF" isLeaf="true">
+                <ownedComment xmi:id="_qVRtMPi_EeGqfYwrZBDe-Q">
+                  <body>@author Max Ross &lt;maxr@google.com></body>
+                </ownedComment>
+                <ownedAttribute xmi:id="_qT5NIPi_EeGqfYwrZBDe-Q" name="INSTANCE" visibility="private" isLeaf="true" isStatic="true" type="_qQTtoPi_EeGqfYwrZBDe-Q" isReadOnly="true" association="_qVwOUfi_EeGqfYwrZBDe-Q">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_qT50MPi_EeGqfYwrZBDe-Q" value="Persistence.createEntityManagerFactory(&quot;transactions-optional&quot;)"/>
+                </ownedAttribute>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qUoM8Pi_EeGqfYwrZBDe-Q" name="get" specification="_qJjlYPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qUoM8fi_EeGqfYwrZBDe-Q" type="_qQTtoPi_EeGqfYwrZBDe-Q" direction="return"/>
+                  <language>java</language>
+                  <body>return INSTANCE;
+  </body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_qJjlYPi_EeGqfYwrZBDe-Q" name="get" isStatic="true" method="_qUoM8Pi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qSe34Pi_EeGqfYwrZBDe-Q" type="_qQTtoPi_EeGqfYwrZBDe-Q" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_qJkzgPi_EeGqfYwrZBDe-Q" name="EMF" visibility="private">
+                  <eAnnotations xmi:id="_qJlakPi_EeGqfYwrZBDe-Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                    <details xmi:id="_qJlakfi_EeGqfYwrZBDe-Q" key="create"/>
+                  </eAnnotations>
+                  <ownedParameter xmi:id="_qJmBofi_EeGqfYwrZBDe-Q" type="_qJhwMPi_EeGqfYwrZBDe-Q" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_qJqTEPi_EeGqfYwrZBDe-Q" name="Flashcard">
+                <ownedAttribute xmi:id="_qT7pYPi_EeGqfYwrZBDe-Q" name="id" visibility="private" type="_qSjwYPi_EeGqfYwrZBDe-Q"/>
+                <ownedAttribute xmi:id="_qT-ssPi_EeGqfYwrZBDe-Q" name="answer" visibility="public">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_qUEzUPi_EeGqfYwrZBDe-Q" name="question" visibility="public">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedAttribute>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qUtsgPi_EeGqfYwrZBDe-Q" name="Flashcard" specification="_qJyO4Pi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_dtZp4PjDEeGqfYwrZBDe-Q" type="_qJqTEPi_EeGqfYwrZBDe-Q" direction="return">
+                    <name xsi:nil="true"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_dtaQ8PjDEeGqfYwrZBDe-Q" name="question">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_dtaQ8fjDEeGqfYwrZBDe-Q" name="answer">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>this.question = question;
+		this.answer = answer;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qUuTkPi_EeGqfYwrZBDe-Q" name="getId" specification="_qJ0rIPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qUuTkfi_EeGqfYwrZBDe-Q" type="_qSjwYPi_EeGqfYwrZBDe-Q" direction="return">
+                    <name xsi:nil="true"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>return id;
+	</body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_qJyO4Pi_EeGqfYwrZBDe-Q" name="Flashcard" method="_qUtsgPi_EeGqfYwrZBDe-Q">
+                  <eAnnotations xmi:id="_qJzdAPi_EeGqfYwrZBDe-Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                    <details xmi:id="_qJzdAfi_EeGqfYwrZBDe-Q" key="create"/>
+                  </eAnnotations>
+                  <ownedParameter xmi:id="_drK1QPjDEeGqfYwrZBDe-Q" type="_qJqTEPi_EeGqfYwrZBDe-Q" direction="return"/>
+                  <ownedParameter xmi:id="_ds5TkPjDEeGqfYwrZBDe-Q" name="question">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_ds56oPjDEeGqfYwrZBDe-Q" name="answer">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_qJ0rIPi_EeGqfYwrZBDe-Q" name="getId" method="_qUuTkPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qSoo4Pi_EeGqfYwrZBDe-Q" type="_qSjwYPi_EeGqfYwrZBDe-Q" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_qKL3gPi_EeGqfYwrZBDe-Q" name="GetFlight">
+                <ownedComment xmi:id="_qVcsUPi_EeGqfYwrZBDe-Q">
+                  <body>@author Max Ross &lt;maxr@google.com></body>
+                </ownedComment>
+                <generalization xmi:id="_qS02IPi_EeGqfYwrZBDe-Q" general="_qP_kkPi_EeGqfYwrZBDe-Q"/>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qUylAPi_EeGqfYwrZBDe-Q" name="doGet" specification="_qSuvgPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qUylAfi_EeGqfYwrZBDe-Q" name="req" type="_qQALofi_EeGqfYwrZBDe-Q"/>
+                  <ownedParameter xmi:id="_qUylAvi_EeGqfYwrZBDe-Q" name="resp" type="_qQBZwfi_EeGqfYwrZBDe-Q"/>
+                  <language>java</language>
+                  <body>resp.setContentType(&quot;text/html&quot;);
+ HTMLHelper.printHeader(resp);
+ String key = req.getParameter(&quot;key&quot;);
+ if (key == null) {
+   resp.getWriter().println(&quot;No key provided.&quot;);
+   return;
+ }
+ Flashcard f;
+ if (PersistenceStandard.get() == PersistenceStandard.JPA) {
+   f = findJPA(Long.valueOf(key));
+ } else {
+   f = findJDO(Long.valueOf(key));
+ }
+ resp.getWriter().println(&quot;&lt;body>&lt;div class='container-fluid'>&lt;div class='row-fluid'> &lt;div class='span12'>&lt;form action=\&quot;updateFlight\&quot; method=\&quot;post\&quot;>&quot;);
+ resp.getWriter().println(&quot;&lt;input name=\&quot;key\&quot; type=\&quot;hidden\&quot; value=\&quot;&quot; + key + &quot;\&quot;/>&quot;);
+
+ resp.getWriter().println(&quot;&lt;label>Origin&lt;/label>&lt;input class='span12'  name=\&quot;orig\&quot; type=\&quot;text\&quot; value=\&quot;&quot; + f.getQuestion() + &quot;\&quot;/>&quot;);
+ resp.getWriter().println(&quot;&lt;label>Destination&lt;/label>&lt;input class='span12' name=\&quot;dest\&quot; type=\&quot;text\&quot; value=\&quot;&quot; + f.getAnswer() + &quot;\&quot;/>&quot;);
+ 
+ resp.getWriter().println(&quot;&lt;button type=\&quot;submit\&quot; class='btn btn-block btn-large btn-success'>Update Flight&lt;/button>&quot;);
+ 
+ resp.getWriter().println(&quot;&lt;/form>&quot;);
+ resp.getWriter().println(&quot;&lt;form action=\&quot;deleteFlight\&quot; method=\&quot;post\&quot;>&quot;);
+ resp.getWriter().println(&quot;&lt;input name=\&quot;key\&quot; type=\&quot;hidden\&quot; value=\&quot;&quot; + key + &quot;\&quot;/>&quot;);
+ resp.getWriter().println(&quot;&lt;button type=\&quot;submit\&quot; class='btn btn-block btn-small' >Delete Flight&lt;/button>&quot;);
+ resp.getWriter().println(&quot;&lt;/form>&lt;/div>&lt;/div>&lt;/body>&quot;);
+  </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qUzzIPi_EeGqfYwrZBDe-Q" name="findJPA" specification="_qKO60Pi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qUzzIfi_EeGqfYwrZBDe-Q" name="key">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_qUzzIvi_EeGqfYwrZBDe-Q" type="_qJqTEPi_EeGqfYwrZBDe-Q" direction="return">
+                    <name xsi:nil="true"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>EntityManager em = EMF.get().createEntityManager();
+ try {
+   return em.find(Flashcard.class, key);
+ } finally {
+   em.close();
+ }
+  </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qU0aMPi_EeGqfYwrZBDe-Q" name="findJDO" specification="_qKQwAPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qU0aMfi_EeGqfYwrZBDe-Q" name="key">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_qU0aMvi_EeGqfYwrZBDe-Q" type="_qJqTEPi_EeGqfYwrZBDe-Q" direction="return">
+                    <name xsi:nil="true"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>PersistenceManager pm = PMF.get().getPersistenceManager();
+ try {
+   return pm.getObjectById(Flashcard.class, key);
+ } finally {
+   pm.close();
+ }
+  </body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_qKO60Pi_EeGqfYwrZBDe-Q" name="findJPA" visibility="private" method="_qUzzIPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qKO60fi_EeGqfYwrZBDe-Q" name="key">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_qQsvMPi_EeGqfYwrZBDe-Q" type="_qJqTEPi_EeGqfYwrZBDe-Q" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_qKQwAPi_EeGqfYwrZBDe-Q" name="findJDO" visibility="private" method="_qU0aMPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qKQwAfi_EeGqfYwrZBDe-Q" name="key">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_qQtWQPi_EeGqfYwrZBDe-Q" type="_qJqTEPi_EeGqfYwrZBDe-Q" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_qSuvgPi_EeGqfYwrZBDe-Q" name="doGet" method="_qUylAPi_EeGqfYwrZBDe-Q" raisedException="_qP8hQPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qSvWkPi_EeGqfYwrZBDe-Q" name="req" type="_qQALofi_EeGqfYwrZBDe-Q"/>
+                  <ownedParameter xmi:id="_qSvWkfi_EeGqfYwrZBDe-Q" name="resp" type="_qQBZwfi_EeGqfYwrZBDe-Q"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_qKZS4Pi_EeGqfYwrZBDe-Q" name="GetFlights">
+                <generalization xmi:id="_qTQT8Pi_EeGqfYwrZBDe-Q" general="_qP_kkPi_EeGqfYwrZBDe-Q"/>
+                <ownedAttribute xmi:id="_qUPLYPi_EeGqfYwrZBDe-Q" name="DEFAULT_QUERY" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_qUPycPi_EeGqfYwrZBDe-Q" value="&quot;select from &quot;&#xA;&#x9;&#x9;&#x9;+ Flashcard.class.getName()"/>
+                </ownedAttribute>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qU2PYPi_EeGqfYwrZBDe-Q" name="doPost" specification="_qS5uoPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qU2PYfi_EeGqfYwrZBDe-Q" name="req" type="_qQALofi_EeGqfYwrZBDe-Q"/>
+                  <ownedParameter xmi:id="_qU2PYvi_EeGqfYwrZBDe-Q" name="resp" type="_qQBZwfi_EeGqfYwrZBDe-Q"/>
+                  <language>java</language>
+                  <body>doGet(req, resp);
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qU3dgPi_EeGqfYwrZBDe-Q" name="doGet" specification="_qS_OMPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qU3dgfi_EeGqfYwrZBDe-Q" name="req" type="_qQALofi_EeGqfYwrZBDe-Q"/>
+                  <ownedParameter xmi:id="_qU3dgvi_EeGqfYwrZBDe-Q" name="resp" type="_qQBZwfi_EeGqfYwrZBDe-Q"/>
+                  <language>java</language>
+                  <body>resp.setContentType(&quot;text/html&quot;);
+		long start = System.currentTimeMillis();
+		Collection&lt;Flashcard> flashcards;
+		String query = DEFAULT_QUERY;
+		String customQuery = req.getParameter(&quot;q&quot;);
+		if (customQuery != null) {
+			query = customQuery;
+		}
+		if (PersistenceStandard.get() == PersistenceStandard.JPA) {
+			flashcards = queryJPA(query);
+		} else {
+			flashcards = queryJDO(query);
+		}
+		HTMLHelper.printHeader(resp);
+		resp.getWriter().println(
+				&quot;&lt;body>&lt;div class='container-fluid'>&lt;div class='row-fluid'> &lt;div class='span3'>&quot;);
+		printAddFlightForm(query, resp);
+		resp.getWriter().println(
+				&quot;&lt;p>Request time in millis: &quot;
+						+ (System.currentTimeMillis() - start)+&quot;&lt;/p>&quot;);
+		resp.getWriter().println(&quot;&lt;br>&quot;);
+		printPersistenceStandardForm(query, resp);
+		resp.getWriter().println(&quot;&lt;/div>&lt;div class='span9'>&lt;table id='results'>&quot;);
+		printTableHeader(resp);
+
+		printFlights(resp, flashcards);
+		resp.getWriter().println(&quot;&lt;/table>&lt;/div>&quot;);
+		
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qU4EkPi_EeGqfYwrZBDe-Q" name="queryJDO" specification="_qKeLYPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qU4Ekfi_EeGqfYwrZBDe-Q" name="query">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_qU4Ekvi_EeGqfYwrZBDe-Q" type="_qJqTEPi_EeGqfYwrZBDe-Q" direction="return">
+                    <name xsi:nil="true"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qU4Ek_i_EeGqfYwrZBDe-Q" value="*"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>PersistenceManager pm = PMF.get().getPersistenceManager();
+		try {
+			List&lt;Flashcard> flashcards = (List&lt;Flashcard>) pm.newQuery(query).execute();
+			// Force all results to be pulled back before we close the entity
+			// manager.
+			// We could have also called pm.detachCopyAll()
+			flashcards.size();
+			return flashcards;
+		} finally {
+			pm.close();
+		}
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qU5SsPi_EeGqfYwrZBDe-Q" name="queryJPA" specification="_qKgnoPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qU5Ssfi_EeGqfYwrZBDe-Q" name="query">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_qU5Ssvi_EeGqfYwrZBDe-Q" type="_qJqTEPi_EeGqfYwrZBDe-Q" isOrdered="true" direction="return">
+                    <name xsi:nil="true"/>
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qU5Ss_i_EeGqfYwrZBDe-Q" value="*"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>EntityManager em = EMF.get().createEntityManager();
+		try {
+			List&lt;Flashcard> flashcards = em.createQuery(query).getResultList();
+			// force all results to be pulled back before we close the entity
+			// manager
+			flashcards.size();
+			return flashcards;
+		} finally {
+			em.close();
+		}
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qU55wPi_EeGqfYwrZBDe-Q" name="printPersistenceStandardForm" specification="_qTEtwPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qU55wfi_EeGqfYwrZBDe-Q" name="query">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_qU55wvi_EeGqfYwrZBDe-Q" name="resp" type="_qQBZwfi_EeGqfYwrZBDe-Q"/>
+                  <language>java</language>
+                  <body>PersistenceStandard ps = PersistenceStandard.get();
+		resp.getWriter().println(&quot;&lt;p>Persistence standard is &quot; + ps.name()+&quot;&lt;/p>&quot;);
+
+		resp.getWriter().println(
+				&quot;&lt;form action=\&quot;updatePersistenceStandard\&quot; method=\&quot;post\&quot;>&quot;);
+		resp.getWriter().println(
+				&quot;&lt;button type=\&quot;submit\&quot; class='btn' >Switch to &quot; + ps.getAlternate()
+						+ &quot;&lt;/button>&quot;);
+		resp.getWriter().println(
+				&quot;&lt;input name=\&quot;persistenceStandard\&quot; type=\&quot;hidden\&quot; value=\&quot;&quot;
+						+ ps.getAlternate() + &quot;\&quot;/>&quot;);
+		resp.getWriter().println(
+				&quot;&lt;input name=\&quot;q\&quot; type=\&quot;hidden\&quot; value=\&quot;&quot; + query + &quot;\&quot;/>&quot;);
+		resp.getWriter().println(&quot;&lt;/form>&quot;);
+		resp.getWriter().println(&quot;&lt;/body>&quot;);
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qU6g0Pi_EeGqfYwrZBDe-Q" name="printAddFlightForm" specification="_qTHKAPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qU6g0fi_EeGqfYwrZBDe-Q" name="query">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_qU6g0vi_EeGqfYwrZBDe-Q" name="resp" type="_qQBZwfi_EeGqfYwrZBDe-Q"/>
+                  <language>java</language>
+                  <body>resp.getWriter().println(&quot;&lt;form action=\&quot;addFlight\&quot; method=\&quot;post\&quot;>&quot;);
+		resp.getWriter().println(
+				&quot;&lt;label>Origin&lt;/label>&lt;input class='span12' name=\&quot;orig\&quot; type=\&quot;text\&quot;/>&quot;);
+		resp.getWriter()
+				.println(
+						&quot;&lt;label>Destination&lt;/label>&lt;input class='span12' name=\&quot;dest\&quot; type=\&quot;text\&quot;/>&quot;);
+
+		resp.getWriter()
+				.println(
+						&quot;&lt;button type=\&quot;submit\&quot; class='btn btn-primary btn-block' >Add Flight&lt;/button>&quot;);
+		resp.getWriter().println(
+				&quot;&lt;input name=\&quot;q\&quot; type=\&quot;hidden\&quot; value=\&quot;&quot; + query + &quot;\&quot;/>&quot;);
+		resp.getWriter().println(&quot;&lt;/form>&quot;);
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qU7H4Pi_EeGqfYwrZBDe-Q" name="printFlights" specification="_qTLbcPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qU7H4fi_EeGqfYwrZBDe-Q" name="resp" type="_qQBZwfi_EeGqfYwrZBDe-Q"/>
+                  <ownedParameter xmi:id="_qU7H4vi_EeGqfYwrZBDe-Q" name="flashcards" type="_qQ0D8Pi_EeGqfYwrZBDe-Q"/>
+                  <language>java</language>
+                  <body>if (flashcards.isEmpty()) {
+			resp.getWriter().println(&quot;&lt;br>No Flights!&quot;);
+		}
+		int index = 1;
+		for (Flashcard f : flashcards) {
+			resp.getWriter().println(&quot;&lt;tr id='row_&quot;+f.getId()+&quot;'>&quot;);
+			resp.getWriter().println(&quot;&lt;td>&quot;);
+//			resp.getWriter().println(
+//					&quot;&lt;a href=row_&quot;+f.getId()\&quot;getFlight?key=&quot; + f.getId() + &quot;\&quot;> &quot; + index++
+//							+ &quot;&lt;/a>&quot;);
+			resp.getWriter().println(&quot;&lt;/td>&quot;);
+			resp.getWriter().println(&quot;&lt;td>&quot;);
+			resp.getWriter().println(f.getQuestion());
+			resp.getWriter().println(&quot;&lt;/td>&quot;);
+			resp.getWriter().println(&quot;&lt;td>&quot;);
+			resp.getWriter().println(f.getAnswer());
+			resp.getWriter().println(&quot;&lt;/td>&quot;);
+			resp.getWriter().println(&quot;&lt;/tr>&quot;+&quot;&lt;/a>&quot;);
+		}
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qU8WAPi_EeGqfYwrZBDe-Q" name="printTableHeader" specification="_qTOewPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qU8WAfi_EeGqfYwrZBDe-Q" name="resp" type="_qQBZwfi_EeGqfYwrZBDe-Q"/>
+                  <language>java</language>
+                  <body>resp.getWriter().println(&quot;&lt;thead>&quot;);resp.getWriter().println(&quot;&lt;tr>&quot;);
+		resp.getWriter().println(&quot;&lt;th>&quot;);
+		resp.getWriter().println(&quot;&lt;/th>&quot;);
+		resp.getWriter().println(&quot;&lt;th>&quot;);
+		resp.getWriter().println(&quot;Origin&quot;);
+		resp.getWriter().println(&quot;&lt;/th>&quot;);
+		resp.getWriter().println(&quot;&lt;th>&quot;);
+		resp.getWriter().println(&quot;Dest&quot;);
+		resp.getWriter().println(&quot;&lt;/th>&quot;);
+		resp.getWriter().println(&quot;&lt;/tr>&quot;);
+		resp.getWriter().println(&quot;&lt;/thead>&quot;);
+	</body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_qKeLYPi_EeGqfYwrZBDe-Q" name="queryJDO" visibility="private" method="_qU4EkPi_EeGqfYwrZBDe-Q">
+                  <eAnnotations xmi:id="_qKeycvi_EeGqfYwrZBDe-Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                    <details xmi:id="_qKfZgPi_EeGqfYwrZBDe-Q" key="generic_container"/>
+                  </eAnnotations>
+                  <ownedParameter xmi:id="_qKeLYfi_EeGqfYwrZBDe-Q" name="query">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_qKeycPi_EeGqfYwrZBDe-Q" type="_qJqTEPi_EeGqfYwrZBDe-Q" direction="return">
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qKeycfi_EeGqfYwrZBDe-Q" value="*"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_qKgnoPi_EeGqfYwrZBDe-Q" name="queryJPA" visibility="private" method="_qU5SsPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qKhOsPi_EeGqfYwrZBDe-Q" name="query">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_qKhOsfi_EeGqfYwrZBDe-Q" type="_qJqTEPi_EeGqfYwrZBDe-Q" isOrdered="true" direction="return">
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qKh1wPi_EeGqfYwrZBDe-Q" value="*"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_qS5uoPi_EeGqfYwrZBDe-Q" name="doPost" visibility="protected" method="_qU2PYPi_EeGqfYwrZBDe-Q" raisedException="_qP8hQPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qS5uofi_EeGqfYwrZBDe-Q" name="req" type="_qQALofi_EeGqfYwrZBDe-Q"/>
+                  <ownedParameter xmi:id="_qS5uovi_EeGqfYwrZBDe-Q" name="resp" type="_qQBZwfi_EeGqfYwrZBDe-Q"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_qS_OMPi_EeGqfYwrZBDe-Q" name="doGet" method="_qU3dgPi_EeGqfYwrZBDe-Q" raisedException="_qP8hQPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qS_1QPi_EeGqfYwrZBDe-Q" name="req" type="_qQALofi_EeGqfYwrZBDe-Q"/>
+                  <ownedParameter xmi:id="_qS_1Qfi_EeGqfYwrZBDe-Q" name="resp" type="_qQBZwfi_EeGqfYwrZBDe-Q"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_qTEtwPi_EeGqfYwrZBDe-Q" name="printPersistenceStandardForm" visibility="private" method="_qU55wPi_EeGqfYwrZBDe-Q" raisedException="_qP8hQPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qTEtwfi_EeGqfYwrZBDe-Q" name="query">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_qTFU0Pi_EeGqfYwrZBDe-Q" name="resp" type="_qQBZwfi_EeGqfYwrZBDe-Q"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_qTHKAPi_EeGqfYwrZBDe-Q" name="printAddFlightForm" visibility="private" method="_qU6g0Pi_EeGqfYwrZBDe-Q" raisedException="_qP8hQPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qTHxEPi_EeGqfYwrZBDe-Q" name="query">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_qTIYIPi_EeGqfYwrZBDe-Q" name="resp" type="_qQBZwfi_EeGqfYwrZBDe-Q"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_qTLbcPi_EeGqfYwrZBDe-Q" name="printFlights" visibility="private" method="_qU7H4Pi_EeGqfYwrZBDe-Q" raisedException="_qP8hQPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qTLbcfi_EeGqfYwrZBDe-Q" name="resp" type="_qQBZwfi_EeGqfYwrZBDe-Q"/>
+                  <ownedParameter xmi:id="_qTMCgPi_EeGqfYwrZBDe-Q" name="flashcards" type="_qQ0D8Pi_EeGqfYwrZBDe-Q"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_qTOewPi_EeGqfYwrZBDe-Q" name="printTableHeader" visibility="private" method="_qU8WAPi_EeGqfYwrZBDe-Q" raisedException="_qP8hQPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qTPF0Pi_EeGqfYwrZBDe-Q" name="resp" type="_qQBZwfi_EeGqfYwrZBDe-Q"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_qLA98Pi_EeGqfYwrZBDe-Q" name="HTMLHelper">
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qU_ZUPi_EeGqfYwrZBDe-Q" name="printHeader" specification="_qTWakPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qU_ZUfi_EeGqfYwrZBDe-Q" name="resp" type="_qQBZwfi_EeGqfYwrZBDe-Q"/>
+                  <language>java</language>
+                  <body>// PersistenceStandard ps = PersistenceStandard.get();&#xD;
+		// resp.getWriter().println(&quot;&lt;form action=\&quot;/\&quot; method=\&quot;post\&quot;>&quot;);&#xD;
+		// resp.getWriter().println(ps.name() + &quot; Query for flights: &quot;&#xD;
+		// + &quot;&lt;input name=\&quot;q\&quot; type=\&quot;text\&quot; size=\&quot;100\&quot; &quot;&#xD;
+		// + &quot;value=\&quot;&quot; + (query == null ? &quot;&quot; : query) + &quot;\&quot;/>&quot;);&#xD;
+		// resp.getWriter().println(&quot;&lt;input type=\&quot;submit\&quot; value=\&quot;Run Query\&quot;>&quot;);&#xD;
+		resp.getWriter()&#xD;
+		.println(&quot;&lt;head>&quot;);&#xD;
+				&#xD;
+				resp.getWriter()&#xD;
+				.println(&#xD;
+						&quot;&lt;link href='css/bootstrap.css' rel='stylesheet'>&lt;link href='css/bootstrap-responsive.css' rel='stylesheet'>&lt;style>body{padding-top:30px;}&lt;/style>&lt;script src='js/jquery.js'>&lt;/script>&lt;script src='js/bootstrap.js'>&lt;/script>&lt;script src='js/code.js'>&lt;/script>&quot;);&#xD;
+				resp.getWriter()&#xD;
+				.println(&quot;&lt;meta name='viewport' content='width=device-width, initial-scale=1.0'>&lt;/head>&quot;);&#xD;
+	</body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_qTWakPi_EeGqfYwrZBDe-Q" name="printHeader" isStatic="true" method="_qU_ZUPi_EeGqfYwrZBDe-Q" raisedException="_qP8hQPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qTWakfi_EeGqfYwrZBDe-Q" name="resp" type="_qQBZwfi_EeGqfYwrZBDe-Q"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_qLGdgPi_EeGqfYwrZBDe-Q" name="PMF" isLeaf="true">
+                <ownedComment xmi:id="_qVfIkPi_EeGqfYwrZBDe-Q">
+                  <body>@author Max Ross &lt;maxr@google.com></body>
+                </ownedComment>
+                <ownedAttribute xmi:id="_qUVSAPi_EeGqfYwrZBDe-Q" name="INSTANCE" visibility="private" isLeaf="true" isStatic="true" type="_qRWPcPi_EeGqfYwrZBDe-Q" isReadOnly="true" association="_qVw1Yfi_EeGqfYwrZBDe-Q">
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_qUV5EPi_EeGqfYwrZBDe-Q" value="JDOHelper.getPersistenceManagerFactory(&quot;transactions-optional&quot;)"/>
+                </ownedAttribute>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qVAAYPi_EeGqfYwrZBDe-Q" name="get" specification="_qLISsPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qVAAYfi_EeGqfYwrZBDe-Q" type="_qRWPcPi_EeGqfYwrZBDe-Q" direction="return"/>
+                  <language>java</language>
+                  <body>return INSTANCE;
+  </body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_qLISsPi_EeGqfYwrZBDe-Q" name="get" isStatic="true" method="_qVAAYPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qTY20Pi_EeGqfYwrZBDe-Q" type="_qRWPcPi_EeGqfYwrZBDe-Q" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_qLJg0Pi_EeGqfYwrZBDe-Q" name="PMF" visibility="private">
+                  <eAnnotations xmi:id="_qLJg0fi_EeGqfYwrZBDe-Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                    <details xmi:id="_qLJg0vi_EeGqfYwrZBDe-Q" key="create"/>
+                  </eAnnotations>
+                  <ownedParameter xmi:id="_qLKH4fi_EeGqfYwrZBDe-Q" type="_qLGdgPi_EeGqfYwrZBDe-Q" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Enumeration" xmi:id="_qLOZUPi_EeGqfYwrZBDe-Q" name="PersistenceStandard">
+                <ownedComment xmi:id="_qVfvoPi_EeGqfYwrZBDe-Q">
+                  <body>@author Max Ross &lt;maxr@google.com></body>
+                </ownedComment>
+                <ownedAttribute xmi:id="_qUXuQPi_EeGqfYwrZBDe-Q" name="SYS_PROP" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_qUYVUPi_EeGqfYwrZBDe-Q" value="&quot;helloorm.persistence.standard&quot;"/>
+                </ownedAttribute>
+                <ownedOperation xmi:id="_qLSDsPi_EeGqfYwrZBDe-Q" name="get" isStatic="true" method="_qVB1kPi_EeGqfYwrZBDe-Q">
+                  <eAnnotations xmi:id="_qLSqwPi_EeGqfYwrZBDe-Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                    <details xmi:id="_qLSqwfi_EeGqfYwrZBDe-Q" key="synchronized"/>
+                  </eAnnotations>
+                  <ownedParameter xmi:id="_qRcWEPi_EeGqfYwrZBDe-Q" type="_qLOZUPi_EeGqfYwrZBDe-Q" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_qLUf8Pi_EeGqfYwrZBDe-Q" name="getAlternate" method="_qVDDsPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qRgAcPi_EeGqfYwrZBDe-Q" type="_qLOZUPi_EeGqfYwrZBDe-Q" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_qRdkMPi_EeGqfYwrZBDe-Q" name="set" isStatic="true" method="_qVCcoPi_EeGqfYwrZBDe-Q">
+                  <eAnnotations xmi:id="_qReLQfi_EeGqfYwrZBDe-Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                    <details xmi:id="_qReyUPi_EeGqfYwrZBDe-Q" key="synchronized"/>
+                  </eAnnotations>
+                  <ownedParameter xmi:id="_qReLQPi_EeGqfYwrZBDe-Q" name="ps" type="_qLOZUPi_EeGqfYwrZBDe-Q"/>
+                </ownedOperation>
+                <ownedLiteral xmi:id="_qLPncPi_EeGqfYwrZBDe-Q" name="JPA"/>
+                <ownedLiteral xmi:id="_qLPncfi_EeGqfYwrZBDe-Q" name="JDO"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_qLcbwPi_EeGqfYwrZBDe-Q" name="UpdateFlight">
+                <ownedComment xmi:id="_qVgWsPi_EeGqfYwrZBDe-Q">
+                  <body>@author Max Ross &lt;maxr@google.com></body>
+                </ownedComment>
+                <generalization xmi:id="_qTgyoPi_EeGqfYwrZBDe-Q" general="_qP_kkPi_EeGqfYwrZBDe-Q"/>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qVE44Pi_EeGqfYwrZBDe-Q" name="doPost" specification="_qTdvUPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qVE44fi_EeGqfYwrZBDe-Q" name="req" type="_qQALofi_EeGqfYwrZBDe-Q"/>
+                  <ownedParameter xmi:id="_qVE44vi_EeGqfYwrZBDe-Q" name="resp" type="_qQBZwfi_EeGqfYwrZBDe-Q"/>
+                  <language>java</language>
+                  <body>String key = req.getParameter(&quot;key&quot;);
+ String orig = req.getParameter(&quot;orig&quot;);
+ String dest = req.getParameter(&quot;dest&quot;);
+ if (key == null) {
+   resp.getWriter().println(&quot;No key provided.&quot;);
+   return;
+ }
+
+ if (orig == null) {
+   resp.getWriter().println(&quot;No origin provided.&quot;);
+   return;
+ }
+
+ if (dest == null) {
+   resp.getWriter().println(&quot;No destination provided.&quot;);
+   return;
+ }
+ if (PersistenceStandard.get() == PersistenceStandard.JPA) {
+   doPostJPA(Long.valueOf(key), orig, dest);
+ } else {
+   doPostJDO(Long.valueOf(key), orig, dest);
+ }
+ resp.sendRedirect(&quot;/&quot;);
+  </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qVGHAPi_EeGqfYwrZBDe-Q" name="doPostJDO" specification="_qLgGIPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qVGHAfi_EeGqfYwrZBDe-Q" name="key">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_qVGHAvi_EeGqfYwrZBDe-Q" name="orig">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_qVGHA_i_EeGqfYwrZBDe-Q" name="dest">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>PersistenceManager pm = PMF.get().getPersistenceManager();
+ try {
+   Flashcard f = pm.getObjectById(Flashcard.class, key);
+   f.setQuestion(orig);
+   f.setAnswer(dest);
+ } finally {
+   pm.close();
+ }
+  </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qVGuEPi_EeGqfYwrZBDe-Q" name="doPostJPA" specification="_qLjJcPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qVGuEfi_EeGqfYwrZBDe-Q" name="key">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_qVGuEvi_EeGqfYwrZBDe-Q" name="orig">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_qVGuE_i_EeGqfYwrZBDe-Q" name="dest">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>EntityManager em = EMF.get().createEntityManager();
+ try {
+   Flashcard f = em.find(Flashcard.class, key);
+   f.setQuestion(orig);
+   f.setAnswer(dest);
+ } finally {
+   em.close();
+ }
+  </body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_qLgGIPi_EeGqfYwrZBDe-Q" name="doPostJDO" visibility="private" method="_qVGHAPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qLgGIfi_EeGqfYwrZBDe-Q" name="key">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_qLgtMPi_EeGqfYwrZBDe-Q" name="orig">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_qLgtMfi_EeGqfYwrZBDe-Q" name="dest">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_qLjJcPi_EeGqfYwrZBDe-Q" name="doPostJPA" visibility="private" method="_qVGuEPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qLjwgPi_EeGqfYwrZBDe-Q" name="key">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_qLjwgfi_EeGqfYwrZBDe-Q" name="orig">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_qLjwgvi_EeGqfYwrZBDe-Q" name="dest">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_qTdvUPi_EeGqfYwrZBDe-Q" name="doPost" method="_qVE44Pi_EeGqfYwrZBDe-Q" raisedException="_qP8hQPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qTdvUfi_EeGqfYwrZBDe-Q" name="req" type="_qQALofi_EeGqfYwrZBDe-Q"/>
+                  <ownedParameter xmi:id="_qTdvUvi_EeGqfYwrZBDe-Q" name="resp" type="_qQBZwfi_EeGqfYwrZBDe-Q"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_qLs6cPi_EeGqfYwrZBDe-Q" name="UpdatePersistenceStandard">
+                <ownedComment xmi:id="_qVhk0Pi_EeGqfYwrZBDe-Q">
+                  <body>@author Max Ross &lt;maxr@google.com></body>
+                </ownedComment>
+                <generalization xmi:id="_qToHYPi_EeGqfYwrZBDe-Q" general="_qP_kkPi_EeGqfYwrZBDe-Q"/>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qVIjQPi_EeGqfYwrZBDe-Q" name="doPost" specification="_qTlEEPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qVIjQfi_EeGqfYwrZBDe-Q" name="req" type="_qQALofi_EeGqfYwrZBDe-Q"/>
+                  <ownedParameter xmi:id="_qVIjQvi_EeGqfYwrZBDe-Q" name="resp" type="_qQBZwfi_EeGqfYwrZBDe-Q"/>
+                  <language>java</language>
+                  <body>PersistenceStandard ps = PersistenceStandard.valueOf(req.getParameter(&quot;persistenceStandard&quot;));
+ PersistenceStandard.set(ps);
+ resp.sendRedirect(&quot;/&quot;);
+  </body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_qTlEEPi_EeGqfYwrZBDe-Q" name="doPost" method="_qVIjQPi_EeGqfYwrZBDe-Q" raisedException="_qP8hQPi_EeGqfYwrZBDe-Q">
+                  <ownedParameter xmi:id="_qTlEEfi_EeGqfYwrZBDe-Q" name="req" type="_qQALofi_EeGqfYwrZBDe-Q"/>
+                  <ownedParameter xmi:id="_qTlEEvi_EeGqfYwrZBDe-Q" name="resp" type="_qQBZwfi_EeGqfYwrZBDe-Q"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_qVvAMPi_EeGqfYwrZBDe-Q" name="" memberEnd="_qVvAMfi_EeGqfYwrZBDe-Q _qT07sPi_EeGqfYwrZBDe-Q">
+                <ownedEnd xmi:id="_qVvAMfi_EeGqfYwrZBDe-Q" name="" type="_qI-9oPi_EeGqfYwrZBDe-Q" association="_qVvAMPi_EeGqfYwrZBDe-Q"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_qVwOUfi_EeGqfYwrZBDe-Q" name="" memberEnd="_qVwOUvi_EeGqfYwrZBDe-Q _qT5NIPi_EeGqfYwrZBDe-Q">
+                <ownedEnd xmi:id="_qVwOUvi_EeGqfYwrZBDe-Q" name="" type="_qJhwMPi_EeGqfYwrZBDe-Q" association="_qVwOUfi_EeGqfYwrZBDe-Q"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_qVw1Yfi_EeGqfYwrZBDe-Q" name="" memberEnd="_qVw1Yvi_EeGqfYwrZBDe-Q _qUVSAPi_EeGqfYwrZBDe-Q">
+                <ownedEnd xmi:id="_qVw1Yvi_EeGqfYwrZBDe-Q" name="" type="_qLGdgPi_EeGqfYwrZBDe-Q" association="_qVw1Yfi_EeGqfYwrZBDe-Q"/>
+              </packagedElement>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_qDNs0Pi_EeGqfYwrZBDe-Q" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_qDNs0fi_EeGqfYwrZBDe-Q" name="io">
+        <packagedElement xmi:type="uml:Class" xmi:id="_qP8hQPi_EeGqfYwrZBDe-Q" name="IOException"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_qE8yMPi_EeGqfYwrZBDe-Q" name="util">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_qQ0D8Pi_EeGqfYwrZBDe-Q" name="Collection"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_qQ1SEPi_EeGqfYwrZBDe-Q" name="List"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_qSjJUPi_EeGqfYwrZBDe-Q" name="lang">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_qSjwYPi_EeGqfYwrZBDe-Q" name="Long"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_qDOT4Pi_EeGqfYwrZBDe-Q" name="javax">
+      <packagedElement xmi:type="uml:Package" xmi:id="_qDO68Pi_EeGqfYwrZBDe-Q" name="jdo">
+        <packagedElement xmi:type="uml:Package" xmi:id="_qD8FkPi_EeGqfYwrZBDe-Q" name="annotations">
+          <packagedElement xmi:type="uml:Enumeration" xmi:id="_qQYmIPi_EeGqfYwrZBDe-Q" name="IdGeneratorStrategy"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_qQZ0Qfi_EeGqfYwrZBDe-Q" name="PersistenceCapable"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_qQbpcPi_EeGqfYwrZBDe-Q" name="Persistent"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_qQc3kPi_EeGqfYwrZBDe-Q" name="PrimaryKey"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_qP9vYPi_EeGqfYwrZBDe-Q" name="PersistenceManager"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_qRTzMPi_EeGqfYwrZBDe-Q" name="JDOHelper"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_qRWPcPi_EeGqfYwrZBDe-Q" name="PersistenceManagerFactory"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_qDO68fi_EeGqfYwrZBDe-Q" name="persistence">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_qP-Wcfi_EeGqfYwrZBDe-Q" name="EntityManager"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_qQTtoPi_EeGqfYwrZBDe-Q" name="EntityManagerFactory"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_qQU7wPi_EeGqfYwrZBDe-Q" name="Persistence"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_qDPiAPi_EeGqfYwrZBDe-Q" name="servlet">
+        <packagedElement xmi:type="uml:Package" xmi:id="_qDPiAfi_EeGqfYwrZBDe-Q" name="http">
+          <packagedElement xmi:type="uml:Class" xmi:id="_qP_kkPi_EeGqfYwrZBDe-Q" name="HttpServlet"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_qQALofi_EeGqfYwrZBDe-Q" name="HttpServletRequest"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_qQBZwfi_EeGqfYwrZBDe-Q" name="HttpServletResponse"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_px1o8Pi_EeGqfYwrZBDe-Q">
+      <eAnnotations xmi:id="_px1o8fi_EeGqfYwrZBDe-Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_px5TUPi_EeGqfYwrZBDe-Q" base_Package="_pqNW8Pi_EeGqfYwrZBDe-Q">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_qJmBoPi_EeGqfYwrZBDe-Q" base_Element="_qJkzgPi_EeGqfYwrZBDe-Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_qJq6IPi_EeGqfYwrZBDe-Q" base_Element="_qJqTEPi_EeGqfYwrZBDe-Q"/>
+  <UMLLabProfile:StyledElement xmi:id="_qJ0EEPi_EeGqfYwrZBDe-Q" base_Element="_qJyO4Pi_EeGqfYwrZBDe-Q"/>
+  <UMLLabProfile:StyledElement xmi:id="_qJ1SMPi_EeGqfYwrZBDe-Q" base_Element="_qJ0rIPi_EeGqfYwrZBDe-Q"/>
+  <UMLLabProfile:Annotations xmi:id="_qJ2gUPi_EeGqfYwrZBDe-Q" base_Element="_qJqTEPi_EeGqfYwrZBDe-Q">
+    <annotations xmi:id="_qJ2gUfi_EeGqfYwrZBDe-Q" name="PersistenceCapable">
+      <annotationParameters xmi:id="_qJ3HYPi_EeGqfYwrZBDe-Q" name="detachable" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_qVSUQPi_EeGqfYwrZBDe-Q" value="&quot;true&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_qLKH4Pi_EeGqfYwrZBDe-Q" base_Element="_qLJg0Pi_EeGqfYwrZBDe-Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_qLTR0Pi_EeGqfYwrZBDe-Q" base_Element="_qLSDsPi_EeGqfYwrZBDe-Q"/>
+  <UMLLabProfile:Reference xmi:id="_qP9IUPi_EeGqfYwrZBDe-Q" base_Element="_qP8hQPi_EeGqfYwrZBDe-Q"/>
+  <UMLLabProfile:Reference xmi:id="_qP-WcPi_EeGqfYwrZBDe-Q" base_Element="_qP9vYPi_EeGqfYwrZBDe-Q"/>
+  <UMLLabProfile:Reference xmi:id="_qP-9gPi_EeGqfYwrZBDe-Q" base_Element="_qP-Wcfi_EeGqfYwrZBDe-Q"/>
+  <UMLLabProfile:Reference xmi:id="_qQALoPi_EeGqfYwrZBDe-Q" base_Element="_qP_kkPi_EeGqfYwrZBDe-Q"/>
+  <UMLLabProfile:Reference xmi:id="_qQBZwPi_EeGqfYwrZBDe-Q" base_Element="_qQALofi_EeGqfYwrZBDe-Q"/>
+  <UMLLabProfile:Reference xmi:id="_qQCA0Pi_EeGqfYwrZBDe-Q" base_Element="_qQBZwfi_EeGqfYwrZBDe-Q"/>
+  <UMLLabProfile:Reference xmi:id="_qQUUsPi_EeGqfYwrZBDe-Q" base_Element="_qQTtoPi_EeGqfYwrZBDe-Q"/>
+  <UMLLabProfile:Reference xmi:id="_qQVi0Pi_EeGqfYwrZBDe-Q" base_Element="_qQU7wPi_EeGqfYwrZBDe-Q"/>
+  <UMLLabProfile:Reference xmi:id="_qQZ0QPi_EeGqfYwrZBDe-Q" base_Element="_qQYmIPi_EeGqfYwrZBDe-Q"/>
+  <UMLLabProfile:Reference xmi:id="_qQbCYPi_EeGqfYwrZBDe-Q" base_Element="_qQZ0Qfi_EeGqfYwrZBDe-Q"/>
+  <UMLLabProfile:Reference xmi:id="_qQcQgPi_EeGqfYwrZBDe-Q" base_Element="_qQbpcPi_EeGqfYwrZBDe-Q"/>
+  <UMLLabProfile:Reference xmi:id="_qQdeoPi_EeGqfYwrZBDe-Q" base_Element="_qQc3kPi_EeGqfYwrZBDe-Q"/>
+  <UMLLabProfile:Reference xmi:id="_qQ0rAPi_EeGqfYwrZBDe-Q" base_Element="_qQ0D8Pi_EeGqfYwrZBDe-Q"/>
+  <UMLLabProfile:Reference xmi:id="_qQ15IPi_EeGqfYwrZBDe-Q" base_Element="_qQ1SEPi_EeGqfYwrZBDe-Q"/>
+  <UMLLabProfile:Reference xmi:id="_qRVoYPi_EeGqfYwrZBDe-Q" base_Element="_qRTzMPi_EeGqfYwrZBDe-Q"/>
+  <UMLLabProfile:Reference xmi:id="_qRW2gPi_EeGqfYwrZBDe-Q" base_Element="_qRWPcPi_EeGqfYwrZBDe-Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_qRfZYPi_EeGqfYwrZBDe-Q" base_Element="_qRdkMPi_EeGqfYwrZBDe-Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_qSL88Pi_EeGqfYwrZBDe-Q" base_Element="_qSKHwPi_EeGqfYwrZBDe-Q"/>
+  <UMLLabProfile:Annotations xmi:id="_qSSqoPi_EeGqfYwrZBDe-Q" base_Element="_qSKHwPi_EeGqfYwrZBDe-Q">
+    <annotations xmi:id="_qSSqofi_EeGqfYwrZBDe-Q" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_qSkXcPi_EeGqfYwrZBDe-Q" base_Element="_qSjwYPi_EeGqfYwrZBDe-Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_qSxLwPi_EeGqfYwrZBDe-Q" base_Element="_qSuvgPi_EeGqfYwrZBDe-Q"/>
+  <UMLLabProfile:Annotations xmi:id="_qSzoAPi_EeGqfYwrZBDe-Q" base_Element="_qSuvgPi_EeGqfYwrZBDe-Q">
+    <annotations xmi:id="_qS0PEPi_EeGqfYwrZBDe-Q" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_qS68wPi_EeGqfYwrZBDe-Q" base_Element="_qS5uoPi_EeGqfYwrZBDe-Q"/>
+  <UMLLabProfile:Annotations xmi:id="_qS8K4Pi_EeGqfYwrZBDe-Q" base_Element="_qS5uoPi_EeGqfYwrZBDe-Q">
+    <annotations xmi:id="_qS8x8Pi_EeGqfYwrZBDe-Q" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_qTAcUPi_EeGqfYwrZBDe-Q" base_Element="_qS_OMPi_EeGqfYwrZBDe-Q"/>
+  <UMLLabProfile:Annotations xmi:id="_qTCRgPi_EeGqfYwrZBDe-Q" base_Element="_qS_OMPi_EeGqfYwrZBDe-Q">
+    <annotations xmi:id="_qTCRgfi_EeGqfYwrZBDe-Q" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Generics xmi:id="_qTNQoPi_EeGqfYwrZBDe-Q" genericsValue="Flashcard" base_Element="_qTMCgPi_EeGqfYwrZBDe-Q"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_qTeWYPi_EeGqfYwrZBDe-Q" base_Element="_qTdvUPi_EeGqfYwrZBDe-Q"/>
+  <UMLLabProfile:Annotations xmi:id="_qTfkgPi_EeGqfYwrZBDe-Q" base_Element="_qTdvUPi_EeGqfYwrZBDe-Q">
+    <annotations xmi:id="_qTfkgfi_EeGqfYwrZBDe-Q" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_qTlrIPi_EeGqfYwrZBDe-Q" base_Element="_qTlEEPi_EeGqfYwrZBDe-Q"/>
+  <UMLLabProfile:Annotations xmi:id="_qTngUPi_EeGqfYwrZBDe-Q" base_Element="_qTlEEPi_EeGqfYwrZBDe-Q">
+    <annotations xmi:id="_qTngUfi_EeGqfYwrZBDe-Q" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_qT1iwPi_EeGqfYwrZBDe-Q" base_Element="_qT07sPi_EeGqfYwrZBDe-Q"/>
+  <UMLLabProfile:Annotations xmi:id="_qT83gPi_EeGqfYwrZBDe-Q" base_Element="_qT7pYPi_EeGqfYwrZBDe-Q">
+    <annotations xmi:id="_qT9ekPi_EeGqfYwrZBDe-Q" name="PrimaryKey"/>
+    <annotations xmi:id="_qT9ekfi_EeGqfYwrZBDe-Q" name="Persistent">
+      <annotationParameters xmi:id="_qT9ekvi_EeGqfYwrZBDe-Q" name="valueStrategy" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_qVS7UPi_EeGqfYwrZBDe-Q" value="IdGeneratorStrategy.IDENTITY"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_qUDlMPi_EeGqfYwrZBDe-Q" base_Element="_qT-ssPi_EeGqfYwrZBDe-Q">
+    <annotations xmi:id="_qUDlMfi_EeGqfYwrZBDe-Q" name="Persistent"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Annotations xmi:id="_qUH2ofi_EeGqfYwrZBDe-Q" base_Element="_qUEzUPi_EeGqfYwrZBDe-Q">
+    <annotations xmi:id="_qUIdsPi_EeGqfYwrZBDe-Q" name="Persistent"/>
+  </UMLLabProfile:Annotations>
+  <uml:OpaqueBehavior xmi:id="_qVB1kPi_EeGqfYwrZBDe-Q" name="get" specification="_qLSDsPi_EeGqfYwrZBDe-Q">
+    <ownedParameter xmi:id="_qVB1kfi_EeGqfYwrZBDe-Q" type="_qLOZUPi_EeGqfYwrZBDe-Q" direction="return"/>
+    <language>java</language>
+    <body>return PersistenceStandard.valueOf(System.getProperty(SYS_PROP));
+  </body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_qVCcoPi_EeGqfYwrZBDe-Q" name="set" specification="_qRdkMPi_EeGqfYwrZBDe-Q">
+    <ownedParameter xmi:id="_qVCcofi_EeGqfYwrZBDe-Q" name="ps" type="_qLOZUPi_EeGqfYwrZBDe-Q"/>
+    <language>java</language>
+    <body>System.setProperty(SYS_PROP, ps.name());
+  </body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_qVDDsPi_EeGqfYwrZBDe-Q" name="getAlternate" specification="_qLUf8Pi_EeGqfYwrZBDe-Q">
+    <ownedParameter xmi:id="_qVDDsfi_EeGqfYwrZBDe-Q" type="_qLOZUPi_EeGqfYwrZBDe-Q" direction="return"/>
+    <language>java</language>
+    <body>return PersistenceStandard.values()[(this.ordinal() + 1) % 2];
+  </body>
+  </uml:OpaqueBehavior>
+  <UMLLabProfile:Reference xmi:id="_qVwOUPi_EeGqfYwrZBDe-Q" base_Element="_qVvAMPi_EeGqfYwrZBDe-Q"/>
+  <UMLLabProfile:Reference xmi:id="_qVw1YPi_EeGqfYwrZBDe-Q" base_Element="_qVwOUfi_EeGqfYwrZBDe-Q"/>
+  <UMLLabProfile:Reference xmi:id="_qVyDgPi_EeGqfYwrZBDe-Q" base_Element="_qVw1Yfi_EeGqfYwrZBDe-Q"/>
+  <UMLLabProfile:Patch xmi:id="_tf9jsPjDEeGqfYwrZBDe-Q" base_Element="_qJqTEPi_EeGqfYwrZBDe-Q" patchText="@@ -704,32 +704,33 @@&#xA; eturn question;%0A&#xA;+%09&#xA; %7D%0A%0A%09public void &#xA;@@ -788,16 +788,17 @@&#xA; estion;%0A&#xA;+%09&#xA; %7D%0A%0A%09publ&#xA;@@ -830,32 +830,33 @@&#xA; %09return answer;%0A&#xA;+%09&#xA; %7D%0A%0A%09public void &#xA;@@ -906,16 +906,17 @@&#xA; answer;%0A&#xA;+%09&#xA; %7D%0A%0A%09publ&#xA;" conflicting="false"/>
+</xmi:XMI>

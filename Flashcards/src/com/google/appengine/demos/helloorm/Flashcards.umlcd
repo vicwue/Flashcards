@@ -1,0 +1,998 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/0.9.0" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_qfR9wPi_EeGqfYwrZBDe-Q">
+  <eAnnotations xmi:id="_SOifAPl1EeGqfYwrZBDe-Q" source="http://yatta-solutions.com/umllab/annotation/dangling-refs">
+    <contents xsi:type="UMLLabProfile:LegacyStyledElement" xmi:id="_qUBwAPi_EeGqfYwrZBDe-Q">
+      <base_Element xsi:type="uml:Property" href="Flashcards.uml#_qT-ssPi_EeGqfYwrZBDe-Q"/>
+      <associatedElement xsi:type="uml:Operation" xmi:id="_SOjGEPl1EeGqfYwrZBDe-Q" name="getAnswer" method="_SQBswPl1EeGqfYwrZBDe-Q">
+        <ownedParameter xmi:id="_SOjGEfl1EeGqfYwrZBDe-Q" direction="return">
+          <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </associatedElement>
+      <associatedElement xsi:type="uml:Operation" xmi:id="_SOjGEvl1EeGqfYwrZBDe-Q" name="setAnswer" method="_SQCT0Pl1EeGqfYwrZBDe-Q">
+        <ownedParameter xmi:id="_SOjGE_l1EeGqfYwrZBDe-Q" name="answer">
+          <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </associatedElement>
+    </contents>
+    <contents xsi:type="UMLLabProfile:LegacyStyledElement" xmi:id="_qUGogPi_EeGqfYwrZBDe-Q">
+      <base_Element xsi:type="uml:Property" href="Flashcards.uml#_qUEzUPi_EeGqfYwrZBDe-Q"/>
+      <associatedElement xsi:type="uml:Operation" xmi:id="_SQBFsPl1EeGqfYwrZBDe-Q" name="getQuestion" method="_SQCT0vl1EeGqfYwrZBDe-Q">
+        <ownedParameter xmi:id="_SQBFsfl1EeGqfYwrZBDe-Q" direction="return">
+          <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </associatedElement>
+      <associatedElement xsi:type="uml:Operation" xmi:id="_SQBFsvl1EeGqfYwrZBDe-Q" name="setQuestion" method="_SQC64Pl1EeGqfYwrZBDe-Q">
+        <ownedParameter xmi:id="_SQBFs_l1EeGqfYwrZBDe-Q" name="question">
+          <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </associatedElement>
+    </contents>
+    <contents xsi:type="uml:OpaqueBehavior" xmi:id="_SQBswPl1EeGqfYwrZBDe-Q" name="getAnswer" specification="_SOjGEPl1EeGqfYwrZBDe-Q">
+      <ownedParameter xmi:id="_SQBswfl1EeGqfYwrZBDe-Q" direction="return">
+        <name xsi:nil="true"/>
+        <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <body>return answer;
+	</body>
+      <language>java</language>
+    </contents>
+    <contents xsi:type="uml:OpaqueBehavior" xmi:id="_SQCT0Pl1EeGqfYwrZBDe-Q" name="setAnswer" specification="_SOjGEvl1EeGqfYwrZBDe-Q">
+      <ownedParameter xmi:id="_SQCT0fl1EeGqfYwrZBDe-Q" name="answer">
+        <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <body>this.answer = answer;
+	</body>
+      <language>java</language>
+    </contents>
+    <contents xsi:type="uml:OpaqueBehavior" xmi:id="_SQCT0vl1EeGqfYwrZBDe-Q" name="getQuestion" specification="_SQBFsPl1EeGqfYwrZBDe-Q">
+      <ownedParameter xmi:id="_SQCT0_l1EeGqfYwrZBDe-Q" direction="return">
+        <name xsi:nil="true"/>
+        <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <body>return question;
+	</body>
+      <language>java</language>
+    </contents>
+    <contents xsi:type="uml:OpaqueBehavior" xmi:id="_SQC64Pl1EeGqfYwrZBDe-Q" name="setQuestion" specification="_SQBFsvl1EeGqfYwrZBDe-Q">
+      <ownedParameter xmi:id="_SQC64fl1EeGqfYwrZBDe-Q" name="question">
+        <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <body>this.question = question;
+	</body>
+      <language>java</language>
+    </contents>
+  </eAnnotations>
+  <modelElement href="Flashcards.uml#_qDahIPi_EeGqfYwrZBDe-Q"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:ConnectionVisual" xmi:id="_qp2PAPi_EeGqfYwrZBDe-Q" sourceItem="_qp1n8Pi_EeGqfYwrZBDe-Q" targetItem="_qp4rQPi_EeGqfYwrZBDe-Q"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:ConnectionVisual" xmi:id="_qqCcQPi_EeGqfYwrZBDe-Q" sourceItem="_qqAnEPi_EeGqfYwrZBDe-Q" targetItem="_qqDqYPi_EeGqfYwrZBDe-Q"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:ConnectionVisual" xmi:id="_qqZBkPi_EeGqfYwrZBDe-Q" sourceItem="_qqPQkPi_EeGqfYwrZBDe-Q" targetItem="_qqa2wPi_EeGqfYwrZBDe-Q"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:ConnectionVisual" xmi:id="_qqfvQPi_EeGqfYwrZBDe-Q" sourceItem="_qqcE4Pi_EeGqfYwrZBDe-Q" targetItem="_qqg9YPi_EeGqfYwrZBDe-Q"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:ConnectionVisual" xmi:id="_qqlO0Pi_EeGqfYwrZBDe-Q" sourceItem="_qqiykPi_EeGqfYwrZBDe-Q" targetItem="_qqnEAPi_EeGqfYwrZBDe-Q"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:ConnectionVisual" xmi:id="_qqw1APi_EeGqfYwrZBDe-Q" sourceItem="_qqu_0Pi_EeGqfYwrZBDe-Q" targetItem="_qqzRQPi_EeGqfYwrZBDe-Q"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:ConnectionVisual" xmi:id="_qrLrwPi_EeGqfYwrZBDe-Q" sourceItem="_qrDI4Pi_EeGqfYwrZBDe-Q" targetItem="_qrOIAPi_EeGqfYwrZBDe-Q"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:ConnectionVisual" xmi:id="_qrVcwPi_EeGqfYwrZBDe-Q" sourceItem="_qrQkQPi_EeGqfYwrZBDe-Q" targetItem="_qrYgEPi_EeGqfYwrZBDe-Q"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_KTevMPjAEeGqfYwrZBDe-Q" sourceAnchor="202.0,0.0" targetAnchor="39.0,44.0" subClass="_qrOIAPi_EeGqfYwrZBDe-Q" superClass="_KVNNgPjAEeGqfYwrZBDe-Q">
+    <modelElement href="Flashcards.uml#_qSVG4Pi_EeGqfYwrZBDe-Q"/>
+    <bendpoints xmi:id="_rKKb4PjBEeGqfYwrZBDe-Q" sourceY="-123" targetX="-989" targetY="27"/>
+    <bendpoints xmi:id="_rKKb4fjBEeGqfYwrZBDe-Q" sourceX="989" sourceY="-123" targetY="27"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_KTf9UPjAEeGqfYwrZBDe-Q" sourceAnchor="190.0,0.0" targetAnchor="39.0,44.0" subClass="_qqnEAPi_EeGqfYwrZBDe-Q" superClass="_KVNNgPjAEeGqfYwrZBDe-Q">
+    <modelElement href="Flashcards.uml#_qSb0kPi_EeGqfYwrZBDe-Q"/>
+    <bendpoints xmi:id="_rKLqAfjBEeGqfYwrZBDe-Q" sourceY="-149" targetX="492" targetY="27"/>
+    <bendpoints xmi:id="_rKLqAvjBEeGqfYwrZBDe-Q" sourceX="-492" sourceY="-149" targetY="27"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_KTvN4PjAEeGqfYwrZBDe-Q" sourceAnchor="199.0,0.0" targetAnchor="39.0,44.0" subClass="_qp4rQPi_EeGqfYwrZBDe-Q" superClass="_KVNNgPjAEeGqfYwrZBDe-Q">
+    <modelElement href="Flashcards.uml#_qS02IPi_EeGqfYwrZBDe-Q"/>
+    <bendpoints xmi:id="_rKMREPjBEeGqfYwrZBDe-Q" sourceY="-235" targetX="957" targetY="-59"/>
+    <bendpoints xmi:id="_rKMREfjBEeGqfYwrZBDe-Q" sourceX="-1228" sourceY="-235" targetX="-271" targetY="-59"/>
+    <bendpoints xmi:id="_rKMREvjBEeGqfYwrZBDe-Q" sourceX="-1228" sourceY="-149" targetX="-271" targetY="27"/>
+    <bendpoints xmi:id="_rKMRE_jBEeGqfYwrZBDe-Q" sourceX="-957" sourceY="-149" targetY="27"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_KTv08PjAEeGqfYwrZBDe-Q" sourceAnchor="222.0,0.0" targetAnchor="39.0,44.0" subClass="_qq5X4Pi_EeGqfYwrZBDe-Q" superClass="_KVNNgPjAEeGqfYwrZBDe-Q">
+    <modelElement href="Flashcards.uml#_qTQT8Pi_EeGqfYwrZBDe-Q"/>
+    <bendpoints xmi:id="_rKKb4vjBEeGqfYwrZBDe-Q" sourceY="-28" targetX="-479" targetY="27"/>
+    <bendpoints xmi:id="_rKLC8PjBEeGqfYwrZBDe-Q" sourceX="479" sourceY="-28" targetY="27"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_KTwcAPjAEeGqfYwrZBDe-Q" sourceAnchor="212.0,0.0" targetAnchor="39.0,44.0" subClass="_qrYgEPi_EeGqfYwrZBDe-Q" superClass="_KVNNgPjAEeGqfYwrZBDe-Q">
+    <modelElement href="Flashcards.uml#_qTgyoPi_EeGqfYwrZBDe-Q"/>
+    <bendpoints xmi:id="_rKLC8fjBEeGqfYwrZBDe-Q" sourceY="-149" targetX="30" targetY="27"/>
+    <bendpoints xmi:id="_rKLqAPjBEeGqfYwrZBDe-Q" sourceX="-30" sourceY="-149" targetY="27"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_KTwcAfjAEeGqfYwrZBDe-Q" sourceAnchor="202.0,0.0" targetAnchor="39.0,44.0" subClass="_qqDqYPi_EeGqfYwrZBDe-Q" superClass="_KVNNgPjAEeGqfYwrZBDe-Q">
+    <modelElement href="Flashcards.uml#_qToHYPi_EeGqfYwrZBDe-Q"/>
+    <bendpoints xmi:id="_hfuMUPjAEeGqfYwrZBDe-Q" sourceY="-31" targetX="1301" targetY="24"/>
+    <bendpoints xmi:id="_hfuMUfjAEeGqfYwrZBDe-Q" sourceX="-1301" sourceY="-31" targetY="24"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_KVgvgPjAEeGqfYwrZBDe-Q" sourceAnchor="0.0,46.0" targetAnchor="127.0,31.0" source="_qrOIAPi_EeGqfYwrZBDe-Q" target="_KWY5QPjAEeGqfYwrZBDe-Q">
+    <modelElement href="Flashcards.uml#_qVvAMPi_EeGqfYwrZBDe-Q"/>
+    <nameVisual xmi:id="_KVycUPjAEeGqfYwrZBDe-Q" text="">
+      <visualProperties xmi:id="_KkRkQPjAEeGqfYwrZBDe-Q" position="-19.0,-8.000000000000028"/>
+    </nameVisual>
+    <stereotypes xmi:id="_KWFXQPjAEeGqfYwrZBDe-Q" name="Reference">
+      <modelElement href="Flashcards.uml#_qVwOUPi_EeGqfYwrZBDe-Q"/>
+    </stereotypes>
+    <sourceRole xmi:id="_KWEwMPjAEeGqfYwrZBDe-Q" name="">
+      <modelElement href="Flashcards.uml#_qVvAMfi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_KkQWIvjAEeGqfYwrZBDe-Q" position="-20.0,8.0"/>
+      <visibility xmi:id="_KWFXQvjAEeGqfYwrZBDe-Q" label="+"/>
+      <cardinality xmi:id="_KWFXQfjAEeGqfYwrZBDe-Q" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_KWEwMfjAEeGqfYwrZBDe-Q" name="response" navigable="true">
+      <modelElement href="Flashcards.uml#_qT07sPi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_KkRkQfjAEeGqfYwrZBDe-Q" position="5.0,-44.00000000000006"/>
+      <visibility xmi:id="_KWF-UfjAEeGqfYwrZBDe-Q" label="-"/>
+      <cardinality xmi:id="_KWF-UPjAEeGqfYwrZBDe-Q" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_VsKesPjAEeGqfYwrZBDe-Q" sourceAnchor="106.0,0.0" targetAnchor="0.0,30.0" source="_qqa2wPi_EeGqfYwrZBDe-Q" target="_Vsf14PjAEeGqfYwrZBDe-Q">
+    <modelElement href="Flashcards.uml#_qVwOUfi_EeGqfYwrZBDe-Q"/>
+    <nameVisual xmi:id="_VseAsPjAEeGqfYwrZBDe-Q" text="">
+      <visualProperties xmi:id="_V7hJUPjAEeGqfYwrZBDe-Q" position="2.5000000000000284,1.5"/>
+    </nameVisual>
+    <bendpoints xmi:id="_rKJNwPjBEeGqfYwrZBDe-Q" sourceY="-86" targetX="-172"/>
+    <stereotypes xmi:id="_VsfO0PjAEeGqfYwrZBDe-Q" name="Reference">
+      <modelElement href="Flashcards.uml#_qVw1YPi_EeGqfYwrZBDe-Q"/>
+    </stereotypes>
+    <sourceRole xmi:id="_VsenwPjAEeGqfYwrZBDe-Q" name="">
+      <modelElement href="Flashcards.uml#_qVwOUvi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_V7giQPjAEeGqfYwrZBDe-Q" position="-16.5,-36.0"/>
+      <visibility xmi:id="_VsfO0vjAEeGqfYwrZBDe-Q" label="+"/>
+      <cardinality xmi:id="_VsfO0fjAEeGqfYwrZBDe-Q" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_VsenwfjAEeGqfYwrZBDe-Q" name="INSTANCE" navigable="true">
+      <modelElement href="Flashcards.uml#_qT5NIPi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_V7hJUfjAEeGqfYwrZBDe-Q" position="-69.5,2.5"/>
+      <visibility xmi:id="_VsfO1PjAEeGqfYwrZBDe-Q" label="-"/>
+      <cardinality xmi:id="_VsfO0_jAEeGqfYwrZBDe-Q" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_VulgkPjAEeGqfYwrZBDe-Q" sourceAnchor="121.0,0.0" targetAnchor="83.0,0.0" source="_qqg9YPi_EeGqfYwrZBDe-Q" target="_VvZY4vjAEeGqfYwrZBDe-Q">
+    <modelElement href="Flashcards.uml#_qVw1Yfi_EeGqfYwrZBDe-Q"/>
+    <nameVisual xmi:id="_Vu7e0PjAEeGqfYwrZBDe-Q" text="">
+      <visualProperties xmi:id="_V7iXcPjAEeGqfYwrZBDe-Q" position="2.7222222222222854,-17.000000000000114"/>
+    </nameVisual>
+    <bendpoints xmi:id="_rKJ00PjBEeGqfYwrZBDe-Q" sourceY="-284" targetX="900" targetY="-168"/>
+    <bendpoints xmi:id="_rKJ00fjBEeGqfYwrZBDe-Q" sourceX="-900" sourceY="-284" targetY="-168"/>
+    <stereotypes xmi:id="_VvYx0fjAEeGqfYwrZBDe-Q" name="Reference">
+      <modelElement href="Flashcards.uml#_qVyDgPi_EeGqfYwrZBDe-Q"/>
+    </stereotypes>
+    <sourceRole xmi:id="_VvYKwPjAEeGqfYwrZBDe-Q" name="">
+      <modelElement href="Flashcards.uml#_qVw1Yvi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_V7hwYPjAEeGqfYwrZBDe-Q" position="-16.5,-36.0"/>
+      <visibility xmi:id="_VvYx0_jAEeGqfYwrZBDe-Q" label="+"/>
+      <cardinality xmi:id="_VvYx0vjAEeGqfYwrZBDe-Q" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_VvYx0PjAEeGqfYwrZBDe-Q" name="INSTANCE" navigable="true">
+      <modelElement href="Flashcards.uml#_qUVSAPi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_V7iXcfjAEeGqfYwrZBDe-Q" position="-71.49999999999989,-36.000000000000114"/>
+      <visibility xmi:id="_VvZY4fjAEeGqfYwrZBDe-Q" label="-"/>
+      <cardinality xmi:id="_VvZY4PjAEeGqfYwrZBDe-Q" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:CommentVisual" xmi:id="_qp1n8Pi_EeGqfYwrZBDe-Q" item="_qp4rQPi_EeGqfYwrZBDe-Q" sourceConnectionVisual="_qp2PAPi_EeGqfYwrZBDe-Q" text="@author Max Ross &lt;maxr@google.com>">
+    <modelElement href="Flashcards.uml#_qVcsUPi_EeGqfYwrZBDe-Q"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:CommentVisual" xmi:id="_qqAnEPi_EeGqfYwrZBDe-Q" item="_qqDqYPi_EeGqfYwrZBDe-Q" sourceConnectionVisual="_qqCcQPi_EeGqfYwrZBDe-Q" text="@author Max Ross &lt;maxr@google.com>">
+    <modelElement href="Flashcards.uml#_qVhk0Pi_EeGqfYwrZBDe-Q"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:CommentVisual" xmi:id="_qqPQkPi_EeGqfYwrZBDe-Q" item="_qqa2wPi_EeGqfYwrZBDe-Q" sourceConnectionVisual="_qqZBkPi_EeGqfYwrZBDe-Q" text="@author Max Ross &lt;maxr@google.com>">
+    <modelElement href="Flashcards.uml#_qVRtMPi_EeGqfYwrZBDe-Q"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:CommentVisual" xmi:id="_qqcE4Pi_EeGqfYwrZBDe-Q" item="_qqg9YPi_EeGqfYwrZBDe-Q" sourceConnectionVisual="_qqfvQPi_EeGqfYwrZBDe-Q" text="@author Max Ross &lt;maxr@google.com>">
+    <modelElement href="Flashcards.uml#_qVfIkPi_EeGqfYwrZBDe-Q"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:CommentVisual" xmi:id="_qqiykPi_EeGqfYwrZBDe-Q" item="_qqnEAPi_EeGqfYwrZBDe-Q" sourceConnectionVisual="_qqlO0Pi_EeGqfYwrZBDe-Q" text="@author Max Ross &lt;maxr@google.com>">
+    <modelElement href="Flashcards.uml#_qVRGIPi_EeGqfYwrZBDe-Q"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:CommentVisual" xmi:id="_qqu_0Pi_EeGqfYwrZBDe-Q" item="_qqzRQPi_EeGqfYwrZBDe-Q" sourceConnectionVisual="_qqw1APi_EeGqfYwrZBDe-Q" text="@author Max Ross &lt;maxr@google.com>">
+    <modelElement href="Flashcards.uml#_qVfvoPi_EeGqfYwrZBDe-Q"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:CommentVisual" xmi:id="_qrDI4Pi_EeGqfYwrZBDe-Q" item="_qrOIAPi_EeGqfYwrZBDe-Q" sourceConnectionVisual="_qrLrwPi_EeGqfYwrZBDe-Q" text="@author Max Ross &lt;maxr@google.com>">
+    <modelElement href="Flashcards.uml#_qVQfEPi_EeGqfYwrZBDe-Q"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:CommentVisual" xmi:id="_qrQkQPi_EeGqfYwrZBDe-Q" item="_qrYgEPi_EeGqfYwrZBDe-Q" sourceConnectionVisual="_qrVcwPi_EeGqfYwrZBDe-Q" text="@author Max Ross &lt;maxr@google.com>">
+    <modelElement href="Flashcards.uml#_qVgWsPi_EeGqfYwrZBDe-Q"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qp7HgPi_EeGqfYwrZBDe-Q" name="IOException">
+    <modelElement href="Flashcards.uml#_qP8hQPi_EeGqfYwrZBDe-Q"/>
+    <visualProperties xmi:id="_qqAAAPi_EeGqfYwrZBDe-Q" position="892.0,810.0" size="-1.0,-1.0" visible="false"/>
+    <stereotypes xmi:id="_qp7Hgfi_EeGqfYwrZBDe-Q" name="Reference">
+      <modelElement href="Flashcards.uml#_qP9IUPi_EeGqfYwrZBDe-Q"/>
+    </stereotypes>
+    <visibility xmi:id="_qp7Hgvi_EeGqfYwrZBDe-Q" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qqDqYPi_EeGqfYwrZBDe-Q" comments="_qqAnEPi_EeGqfYwrZBDe-Q" targetConnectionVisual="_qqCcQPi_EeGqfYwrZBDe-Q" name="UpdatePersistenceStandard" generalizations="_KTwcAfjAEeGqfYwrZBDe-Q">
+    <modelElement href="Flashcards.uml#_qLs6cPi_EeGqfYwrZBDe-Q"/>
+    <visualProperties xmi:id="_qqERcPi_EeGqfYwrZBDe-Q" position="2576.0,129.0" size="-1.0,-1.0" visible="false"/>
+    <visibility xmi:id="_qqDqYfi_EeGqfYwrZBDe-Q" label="+"/>
+    <operations xmi:id="_qqDqYvi_EeGqfYwrZBDe-Q" name="doPost">
+      <modelElement href="Flashcards.uml#_qTlEEPi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_RDYVsPjAEeGqfYwrZBDe-Q"/>
+      <stereotypes xmi:id="_qqDqY_i_EeGqfYwrZBDe-Q" name="LegacyStyledElement">
+        <modelElement href="Flashcards.uml#_qTlrIPi_EeGqfYwrZBDe-Q"/>
+      </stereotypes>
+      <stereotypes xmi:id="_qqDqZPi_EeGqfYwrZBDe-Q" name="Annotations">
+        <modelElement href="Flashcards.uml#_qTngUPi_EeGqfYwrZBDe-Q"/>
+      </stereotypes>
+      <visibility xmi:id="_qqDqZfi_EeGqfYwrZBDe-Q" label="+"/>
+      <parameters xmi:id="_qqDqZvi_EeGqfYwrZBDe-Q" name="req">
+        <modelElement href="Flashcards.uml#_qTlEEfi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qqDqZ_i_EeGqfYwrZBDe-Q" name="HttpServletRequest">
+          <modelElement href="Flashcards.uml#_qQALofi_EeGqfYwrZBDe-Q"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_qqDqaPi_EeGqfYwrZBDe-Q" name="resp">
+        <modelElement href="Flashcards.uml#_qTlEEvi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qqDqafi_EeGqfYwrZBDe-Q" name="HttpServletResponse">
+          <modelElement href="Flashcards.uml#_qQBZwfi_EeGqfYwrZBDe-Q"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qqJxAPi_EeGqfYwrZBDe-Q" name="Flashcard">
+    <modelElement href="Flashcards.uml#_qJqTEPi_EeGqfYwrZBDe-Q"/>
+    <visualProperties xmi:id="_qqOCcPi_EeGqfYwrZBDe-Q" position="368.0,404.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_qqJxAfi_EeGqfYwrZBDe-Q" name="LegacyStyledElement">
+      <modelElement href="Flashcards.uml#_qJq6IPi_EeGqfYwrZBDe-Q"/>
+    </stereotypes>
+    <stereotypes xmi:id="_qqJxAvi_EeGqfYwrZBDe-Q" name="Annotations">
+      <modelElement href="Flashcards.uml#_qJ2gUPi_EeGqfYwrZBDe-Q"/>
+    </stereotypes>
+    <stereotypes xmi:id="_tf__8PjDEeGqfYwrZBDe-Q" name="Patch">
+      <modelElement href="Flashcards.uml#_tf9jsPjDEeGqfYwrZBDe-Q"/>
+    </stereotypes>
+    <visibility xmi:id="_qqJxA_i_EeGqfYwrZBDe-Q" label="+"/>
+    <attributes xmi:id="_qqJxBPi_EeGqfYwrZBDe-Q" name="id">
+      <modelElement href="Flashcards.uml#_qT7pYPi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_RDYVsfjAEeGqfYwrZBDe-Q"/>
+      <stereotypes xmi:id="_qqJxBfi_EeGqfYwrZBDe-Q" name="Annotations">
+        <modelElement href="Flashcards.uml#_qT83gPi_EeGqfYwrZBDe-Q"/>
+      </stereotypes>
+      <visibility xmi:id="_qqJxBvi_EeGqfYwrZBDe-Q" label="-"/>
+      <cardinality xmi:id="_qqJxB_i_EeGqfYwrZBDe-Q" label="1" max="1" min="1"/>
+      <type xmi:id="_qqJxCPi_EeGqfYwrZBDe-Q" name="Long">
+        <modelElement href="Flashcards.uml#_qSjwYPi_EeGqfYwrZBDe-Q"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_qqJxCfi_EeGqfYwrZBDe-Q" name="answer">
+      <modelElement href="Flashcards.uml#_qT-ssPi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_RDY8wPjAEeGqfYwrZBDe-Q"/>
+      <stereotypes xmi:id="_qqJxCvi_EeGqfYwrZBDe-Q" modelElement="_qUBwAPi_EeGqfYwrZBDe-Q" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_qqJxC_i_EeGqfYwrZBDe-Q" name="Annotations">
+        <modelElement href="Flashcards.uml#_qUDlMPi_EeGqfYwrZBDe-Q"/>
+      </stereotypes>
+      <visibility xmi:id="_qqJxDPi_EeGqfYwrZBDe-Q" label="+"/>
+      <cardinality xmi:id="_qqJxDfi_EeGqfYwrZBDe-Q" label="1" max="1" min="1"/>
+      <type xmi:id="_qqJxDvi_EeGqfYwrZBDe-Q" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_qqJxD_i_EeGqfYwrZBDe-Q" name="question">
+      <modelElement href="Flashcards.uml#_qUEzUPi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_RDY8wfjAEeGqfYwrZBDe-Q"/>
+      <stereotypes xmi:id="_qqJxEPi_EeGqfYwrZBDe-Q" modelElement="_qUGogPi_EeGqfYwrZBDe-Q" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_qqJxEfi_EeGqfYwrZBDe-Q" name="Annotations">
+        <modelElement href="Flashcards.uml#_qUH2ofi_EeGqfYwrZBDe-Q"/>
+      </stereotypes>
+      <visibility xmi:id="_qqJxEvi_EeGqfYwrZBDe-Q" label="+"/>
+      <cardinality xmi:id="_qqJxE_i_EeGqfYwrZBDe-Q" label="1" max="1" min="1"/>
+      <type xmi:id="_qqJxFPi_EeGqfYwrZBDe-Q" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_qqJxFfi_EeGqfYwrZBDe-Q" name="Flashcard">
+      <modelElement href="Flashcards.uml#_qJyO4Pi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_RDY8wvjAEeGqfYwrZBDe-Q"/>
+      <keywords xmi:id="_qqJxFvi_EeGqfYwrZBDe-Q" keyword="create"/>
+      <stereotypes xmi:id="_qqJxF_i_EeGqfYwrZBDe-Q" name="StyledElement">
+        <modelElement href="Flashcards.uml#_qJ0EEPi_EeGqfYwrZBDe-Q"/>
+      </stereotypes>
+      <visibility xmi:id="_qqJxGPi_EeGqfYwrZBDe-Q" label="+"/>
+      <outParameters xmi:id="_dvf7oPjDEeGqfYwrZBDe-Q">
+        <modelElement href="Flashcards.uml#_drK1QPjDEeGqfYwrZBDe-Q"/>
+        <type xmi:id="_dvf7ofjDEeGqfYwrZBDe-Q" name="Flashcard">
+          <modelElement href="Flashcards.uml#_qJqTEPi_EeGqfYwrZBDe-Q"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_dvhw0PjDEeGqfYwrZBDe-Q" name="question">
+        <modelElement href="Flashcards.uml#_ds5TkPjDEeGqfYwrZBDe-Q"/>
+        <type xmi:id="_dvhw0fjDEeGqfYwrZBDe-Q" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_dvjmAPjDEeGqfYwrZBDe-Q" name="answer">
+        <modelElement href="Flashcards.uml#_ds56oPjDEeGqfYwrZBDe-Q"/>
+        <type xmi:id="_dvjmAfjDEeGqfYwrZBDe-Q" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_qqKYE_i_EeGqfYwrZBDe-Q" name="getId">
+      <modelElement href="Flashcards.uml#_qJ0rIPi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_RDZj0PjAEeGqfYwrZBDe-Q"/>
+      <stereotypes xmi:id="_qqKYFPi_EeGqfYwrZBDe-Q" name="StyledElement">
+        <modelElement href="Flashcards.uml#_qJ1SMPi_EeGqfYwrZBDe-Q"/>
+      </stereotypes>
+      <visibility xmi:id="_qqKYFfi_EeGqfYwrZBDe-Q" label="+"/>
+      <outParameters xmi:id="_qqKYFvi_EeGqfYwrZBDe-Q">
+        <modelElement href="Flashcards.uml#_qSoo4Pi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qqKYF_i_EeGqfYwrZBDe-Q" name="Long">
+          <modelElement href="Flashcards.uml#_qSjwYPi_EeGqfYwrZBDe-Q"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qqa2wPi_EeGqfYwrZBDe-Q" comments="_qqPQkPi_EeGqfYwrZBDe-Q" targetConnectionVisual="_qqZBkPi_EeGqfYwrZBDe-Q" name="EMF" associationsOut="_VsKesPjAEeGqfYwrZBDe-Q">
+    <modelElement href="Flashcards.uml#_qJhwMPi_EeGqfYwrZBDe-Q"/>
+    <visualProperties xmi:id="_qqbd0Pi_EeGqfYwrZBDe-Q" position="73.0,374.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_qqa2wfi_EeGqfYwrZBDe-Q" label="+"/>
+    <attributes xmi:id="_qqa2wvi_EeGqfYwrZBDe-Q" defaultValue="Persistence.createEntityManagerFactory(&quot;transactions-optional&quot;)" name="INSTANCE" staticAttribute="true">
+      <modelElement href="Flashcards.uml#_qT5NIPi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_RDZj0fjAEeGqfYwrZBDe-Q"/>
+      <visibility xmi:id="_qqa2w_i_EeGqfYwrZBDe-Q" label="-"/>
+      <cardinality xmi:id="_qqa2xPi_EeGqfYwrZBDe-Q" label="1" max="1" min="1"/>
+      <type xmi:id="_qqa2xfi_EeGqfYwrZBDe-Q" name="EntityManagerFactory">
+        <modelElement href="Flashcards.uml#_qQTtoPi_EeGqfYwrZBDe-Q"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_qqa2xvi_EeGqfYwrZBDe-Q" name="get" staticOperation="true">
+      <modelElement href="Flashcards.uml#_qJjlYPi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_RDZj0vjAEeGqfYwrZBDe-Q"/>
+      <visibility xmi:id="_qqa2x_i_EeGqfYwrZBDe-Q" label="+"/>
+      <outParameters xmi:id="_qqa2yPi_EeGqfYwrZBDe-Q">
+        <modelElement href="Flashcards.uml#_qSe34Pi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qqa2yfi_EeGqfYwrZBDe-Q" name="EntityManagerFactory">
+          <modelElement href="Flashcards.uml#_qQTtoPi_EeGqfYwrZBDe-Q"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_qqa2yvi_EeGqfYwrZBDe-Q" name="EMF">
+      <modelElement href="Flashcards.uml#_qJkzgPi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_RDaK4PjAEeGqfYwrZBDe-Q"/>
+      <keywords xmi:id="_qqa2y_i_EeGqfYwrZBDe-Q" keyword="create"/>
+      <stereotypes xmi:id="_qqa2zPi_EeGqfYwrZBDe-Q" name="LegacyStyledElement">
+        <modelElement href="Flashcards.uml#_qJmBoPi_EeGqfYwrZBDe-Q"/>
+      </stereotypes>
+      <visibility xmi:id="_qqa2zfi_EeGqfYwrZBDe-Q" label="-"/>
+      <outParameters xmi:id="_qqa2zvi_EeGqfYwrZBDe-Q">
+        <modelElement href="Flashcards.uml#_qJmBofi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qqa2z_i_EeGqfYwrZBDe-Q" name="EMF">
+          <modelElement href="Flashcards.uml#_qJhwMPi_EeGqfYwrZBDe-Q"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qqg9YPi_EeGqfYwrZBDe-Q" comments="_qqcE4Pi_EeGqfYwrZBDe-Q" targetConnectionVisual="_qqfvQPi_EeGqfYwrZBDe-Q" name="PMF" associationsOut="_VulgkPjAEeGqfYwrZBDe-Q">
+    <modelElement href="Flashcards.uml#_qLGdgPi_EeGqfYwrZBDe-Q"/>
+    <visualProperties xmi:id="_qqhkcPi_EeGqfYwrZBDe-Q" position="701.0,374.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_qqg9Yfi_EeGqfYwrZBDe-Q" label="+"/>
+    <attributes xmi:id="_qqg9Yvi_EeGqfYwrZBDe-Q" defaultValue="JDOHelper.getPersistenceManagerFactory(&quot;transactions-optional&quot;)" name="INSTANCE" staticAttribute="true">
+      <modelElement href="Flashcards.uml#_qUVSAPi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_RDaK4fjAEeGqfYwrZBDe-Q"/>
+      <visibility xmi:id="_qqg9Y_i_EeGqfYwrZBDe-Q" label="-"/>
+      <cardinality xmi:id="_qqg9ZPi_EeGqfYwrZBDe-Q" label="1" max="1" min="1"/>
+      <type xmi:id="_qqg9Zfi_EeGqfYwrZBDe-Q" name="PersistenceManagerFactory">
+        <modelElement href="Flashcards.uml#_qRWPcPi_EeGqfYwrZBDe-Q"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_qqg9Zvi_EeGqfYwrZBDe-Q" name="get" staticOperation="true">
+      <modelElement href="Flashcards.uml#_qLISsPi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_RDaK4vjAEeGqfYwrZBDe-Q"/>
+      <visibility xmi:id="_qqg9Z_i_EeGqfYwrZBDe-Q" label="+"/>
+      <outParameters xmi:id="_qqg9aPi_EeGqfYwrZBDe-Q">
+        <modelElement href="Flashcards.uml#_qTY20Pi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qqg9afi_EeGqfYwrZBDe-Q" name="PersistenceManagerFactory">
+          <modelElement href="Flashcards.uml#_qRWPcPi_EeGqfYwrZBDe-Q"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_qqg9avi_EeGqfYwrZBDe-Q" name="PMF">
+      <modelElement href="Flashcards.uml#_qLJg0Pi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_RDaK4_jAEeGqfYwrZBDe-Q"/>
+      <keywords xmi:id="_qqg9a_i_EeGqfYwrZBDe-Q" keyword="create"/>
+      <stereotypes xmi:id="_qqg9bPi_EeGqfYwrZBDe-Q" name="LegacyStyledElement">
+        <modelElement href="Flashcards.uml#_qLKH4Pi_EeGqfYwrZBDe-Q"/>
+      </stereotypes>
+      <visibility xmi:id="_qqg9bfi_EeGqfYwrZBDe-Q" label="-"/>
+      <outParameters xmi:id="_qqg9bvi_EeGqfYwrZBDe-Q">
+        <modelElement href="Flashcards.uml#_qLKH4fi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qqg9b_i_EeGqfYwrZBDe-Q" name="PMF">
+          <modelElement href="Flashcards.uml#_qLGdgPi_EeGqfYwrZBDe-Q"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qqo5MPi_EeGqfYwrZBDe-Q" name="HTMLHelper">
+    <modelElement href="Flashcards.uml#_qLA98Pi_EeGqfYwrZBDe-Q"/>
+    <visualProperties xmi:id="_qqtKoPi_EeGqfYwrZBDe-Q" position="15.0,805.0" size="-1.0,-1.0" visible="false"/>
+    <visibility xmi:id="_qqpgQPi_EeGqfYwrZBDe-Q" label="+"/>
+    <operations xmi:id="_qqpgQfi_EeGqfYwrZBDe-Q" name="printHeader" staticOperation="true">
+      <modelElement href="Flashcards.uml#_qTWakPi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_RDax8_jAEeGqfYwrZBDe-Q"/>
+      <visibility xmi:id="_qqpgQvi_EeGqfYwrZBDe-Q" label="+"/>
+      <parameters xmi:id="_qqpgQ_i_EeGqfYwrZBDe-Q" name="resp">
+        <modelElement href="Flashcards.uml#_qTWakfi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qqpgRPi_EeGqfYwrZBDe-Q" name="HttpServletResponse">
+          <modelElement href="Flashcards.uml#_qQBZwfi_EeGqfYwrZBDe-Q"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:EnumerationVisual" xmi:id="_qqzRQPi_EeGqfYwrZBDe-Q" comments="_qqu_0Pi_EeGqfYwrZBDe-Q" targetConnectionVisual="_qqw1APi_EeGqfYwrZBDe-Q" name="PersistenceStandard">
+    <modelElement href="Flashcards.uml#_qLOZUPi_EeGqfYwrZBDe-Q"/>
+    <visualProperties xmi:id="_qqz4UPi_EeGqfYwrZBDe-Q" position="998.0,269.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_qqzRQfi_EeGqfYwrZBDe-Q" label="+"/>
+    <attributes xmi:id="_qqzRQvi_EeGqfYwrZBDe-Q" defaultValue="&quot;helloorm.persistence.standard&quot;" name="SYS_PROP" staticAttribute="true">
+      <modelElement href="Flashcards.uml#_qUXuQPi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_RDbZAvjAEeGqfYwrZBDe-Q"/>
+      <visibility xmi:id="_qqzRQ_i_EeGqfYwrZBDe-Q" label="-"/>
+      <cardinality xmi:id="_qqzRRPi_EeGqfYwrZBDe-Q" label="1" max="1" min="1"/>
+      <type xmi:id="_qqzRRfi_EeGqfYwrZBDe-Q" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_qqzRRvi_EeGqfYwrZBDe-Q" name="get" staticOperation="true">
+      <modelElement href="Flashcards.uml#_qLSDsPi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_RDcAEPjAEeGqfYwrZBDe-Q"/>
+      <keywords xmi:id="_qqzRR_i_EeGqfYwrZBDe-Q" keyword="synchronized"/>
+      <stereotypes xmi:id="_qqzRSPi_EeGqfYwrZBDe-Q" name="LegacyStyledElement">
+        <modelElement href="Flashcards.uml#_qLTR0Pi_EeGqfYwrZBDe-Q"/>
+      </stereotypes>
+      <visibility xmi:id="_qqzRSfi_EeGqfYwrZBDe-Q" label="+"/>
+      <outParameters xmi:id="_qqzRSvi_EeGqfYwrZBDe-Q">
+        <modelElement href="Flashcards.uml#_qRcWEPi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qqzRS_i_EeGqfYwrZBDe-Q" name="PersistenceStandard">
+          <modelElement href="Flashcards.uml#_qLOZUPi_EeGqfYwrZBDe-Q"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_qqzRTPi_EeGqfYwrZBDe-Q" name="getAlternate">
+      <modelElement href="Flashcards.uml#_qLUf8Pi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_RDcAEfjAEeGqfYwrZBDe-Q"/>
+      <visibility xmi:id="_qqzRTfi_EeGqfYwrZBDe-Q" label="+"/>
+      <outParameters xmi:id="_qqzRTvi_EeGqfYwrZBDe-Q">
+        <modelElement href="Flashcards.uml#_qRgAcPi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qqzRT_i_EeGqfYwrZBDe-Q" name="PersistenceStandard">
+          <modelElement href="Flashcards.uml#_qLOZUPi_EeGqfYwrZBDe-Q"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_qqzRUPi_EeGqfYwrZBDe-Q" name="set" staticOperation="true">
+      <modelElement href="Flashcards.uml#_qRdkMPi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_RDcAEvjAEeGqfYwrZBDe-Q"/>
+      <keywords xmi:id="_qqzRUfi_EeGqfYwrZBDe-Q" keyword="synchronized"/>
+      <stereotypes xmi:id="_qqzRUvi_EeGqfYwrZBDe-Q" name="LegacyStyledElement">
+        <modelElement href="Flashcards.uml#_qRfZYPi_EeGqfYwrZBDe-Q"/>
+      </stereotypes>
+      <visibility xmi:id="_qqzRU_i_EeGqfYwrZBDe-Q" label="+"/>
+      <parameters xmi:id="_qqzRVPi_EeGqfYwrZBDe-Q" name="ps">
+        <modelElement href="Flashcards.uml#_qReLQPi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qqzRVfi_EeGqfYwrZBDe-Q" name="PersistenceStandard">
+          <modelElement href="Flashcards.uml#_qLOZUPi_EeGqfYwrZBDe-Q"/>
+        </type>
+      </parameters>
+    </operations>
+    <literals xmi:id="_qqzRVvi_EeGqfYwrZBDe-Q" name="JPA">
+      <modelElement href="Flashcards.uml#_qLPncPi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_RDbZAPjAEeGqfYwrZBDe-Q"/>
+    </literals>
+    <literals xmi:id="_qqzRV_i_EeGqfYwrZBDe-Q" name="JDO">
+      <modelElement href="Flashcards.uml#_qLPncfi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_RDbZAfjAEeGqfYwrZBDe-Q"/>
+    </literals>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_KTD4cPjAEeGqfYwrZBDe-Q" name="EntityManager">
+    <modelElement href="Flashcards.uml#_qP-Wcfi_EeGqfYwrZBDe-Q"/>
+    <visualProperties xmi:id="_KTdhEPjAEeGqfYwrZBDe-Q" position="-84.0,386.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_KTD4cfjAEeGqfYwrZBDe-Q" name="Reference">
+      <modelElement href="Flashcards.uml#_qP-9gPi_EeGqfYwrZBDe-Q"/>
+    </stereotypes>
+    <visibility xmi:id="_KTD4cvjAEeGqfYwrZBDe-Q" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_KVdFIPjAEeGqfYwrZBDe-Q" name="HttpServletRequest">
+    <modelElement href="Flashcards.uml#_qQALofi_EeGqfYwrZBDe-Q"/>
+    <visualProperties xmi:id="_KVfhYPjAEeGqfYwrZBDe-Q" position="365.0,801.0" size="-1.0,-1.0" visible="false"/>
+    <stereotypes xmi:id="_KVdsMPjAEeGqfYwrZBDe-Q" name="Reference">
+      <modelElement href="Flashcards.uml#_qQBZwPi_EeGqfYwrZBDe-Q"/>
+    </stereotypes>
+    <visibility xmi:id="_KVdsMfjAEeGqfYwrZBDe-Q" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_KWY5QPjAEeGqfYwrZBDe-Q" name="HttpServletResponse" associationsIn="_KVgvgPjAEeGqfYwrZBDe-Q">
+    <modelElement href="Flashcards.uml#_qQBZwfi_EeGqfYwrZBDe-Q"/>
+    <visualProperties xmi:id="_KWpX8PjAEeGqfYwrZBDe-Q" position="11.0,138.0" size="-1.0,-1.0" visible="false"/>
+    <stereotypes xmi:id="_KWY5QfjAEeGqfYwrZBDe-Q" name="Reference">
+      <modelElement href="Flashcards.uml#_qQCA0Pi_EeGqfYwrZBDe-Q"/>
+    </stereotypes>
+    <visibility xmi:id="_KWY5QvjAEeGqfYwrZBDe-Q" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_KWp_APjAEeGqfYwrZBDe-Q" name="PersistenceManager">
+    <modelElement href="Flashcards.uml#_qP9vYPi_EeGqfYwrZBDe-Q"/>
+    <visualProperties xmi:id="_KWsbQPjAEeGqfYwrZBDe-Q" position="-279.0,386.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_KWp_AfjAEeGqfYwrZBDe-Q" name="Reference">
+      <modelElement href="Flashcards.uml#_qP-WcPi_EeGqfYwrZBDe-Q"/>
+    </stereotypes>
+    <visibility xmi:id="_KWp_AvjAEeGqfYwrZBDe-Q" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_KWtCUPjAEeGqfYwrZBDe-Q" name="Persistence">
+    <modelElement href="Flashcards.uml#_qQU7wPi_EeGqfYwrZBDe-Q"/>
+    <visualProperties xmi:id="_KW_WMPjAEeGqfYwrZBDe-Q" position="22.0,927.0" size="-1.0,-1.0" visible="false"/>
+    <stereotypes xmi:id="_KWtCUfjAEeGqfYwrZBDe-Q" name="Reference">
+      <modelElement href="Flashcards.uml#_qQVi0Pi_EeGqfYwrZBDe-Q"/>
+    </stereotypes>
+    <visibility xmi:id="_KWtCUvjAEeGqfYwrZBDe-Q" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_Vsf14PjAEeGqfYwrZBDe-Q" name="EntityManagerFactory" associationsIn="_VsKesPjAEeGqfYwrZBDe-Q">
+    <modelElement href="Flashcards.uml#_qQTtoPi_EeGqfYwrZBDe-Q"/>
+    <visualProperties xmi:id="_VsvGcPjAEeGqfYwrZBDe-Q" position="351.0,258.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_Vsf14fjAEeGqfYwrZBDe-Q" name="Reference">
+      <modelElement href="Flashcards.uml#_qQUUsPi_EeGqfYwrZBDe-Q"/>
+    </stereotypes>
+    <visibility xmi:id="_Vsf14vjAEeGqfYwrZBDe-Q" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_VswUkPjAEeGqfYwrZBDe-Q" name="List">
+    <modelElement href="Flashcards.uml#_qQ1SEPi_EeGqfYwrZBDe-Q"/>
+    <visualProperties xmi:id="_Vsyw0PjAEeGqfYwrZBDe-Q" position="2495.0,926.0" size="-1.0,-1.0" visible="false"/>
+    <stereotypes xmi:id="_VswUkfjAEeGqfYwrZBDe-Q" name="Reference">
+      <modelElement href="Flashcards.uml#_qQ15IPi_EeGqfYwrZBDe-Q"/>
+    </stereotypes>
+    <visibility xmi:id="_VswUkvjAEeGqfYwrZBDe-Q" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_VtNnkPjAEeGqfYwrZBDe-Q" name="PersistenceCapable">
+    <modelElement href="Flashcards.uml#_qQZ0Qfi_EeGqfYwrZBDe-Q"/>
+    <visualProperties xmi:id="_Vti-wPjAEeGqfYwrZBDe-Q" position="2631.0,912.0" size="-1.0,-1.0" visible="false"/>
+    <stereotypes xmi:id="_VtNnkfjAEeGqfYwrZBDe-Q" name="Reference">
+      <modelElement href="Flashcards.uml#_qQbCYPi_EeGqfYwrZBDe-Q"/>
+    </stereotypes>
+    <visibility xmi:id="_VtNnkvjAEeGqfYwrZBDe-Q" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_Vtjl0PjAEeGqfYwrZBDe-Q" name="Persistent">
+    <modelElement href="Flashcards.uml#_qQbpcPi_EeGqfYwrZBDe-Q"/>
+    <visualProperties xmi:id="_Vt3u4PjAEeGqfYwrZBDe-Q" position="2495.0,1052.0" size="-1.0,-1.0" visible="false"/>
+    <stereotypes xmi:id="_Vtjl0fjAEeGqfYwrZBDe-Q" name="Reference">
+      <modelElement href="Flashcards.uml#_qQcQgPi_EeGqfYwrZBDe-Q"/>
+    </stereotypes>
+    <visibility xmi:id="_Vtjl0vjAEeGqfYwrZBDe-Q" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_Vt4V8PjAEeGqfYwrZBDe-Q" name="PrimaryKey">
+    <modelElement href="Flashcards.uml#_qQc3kPi_EeGqfYwrZBDe-Q"/>
+    <visualProperties xmi:id="_VuOUMPjAEeGqfYwrZBDe-Q" position="2355.0,1038.0" size="-1.0,-1.0" visible="false"/>
+    <stereotypes xmi:id="_Vt4V8fjAEeGqfYwrZBDe-Q" name="Reference">
+      <modelElement href="Flashcards.uml#_qQdeoPi_EeGqfYwrZBDe-Q"/>
+    </stereotypes>
+    <visibility xmi:id="_Vt4V8vjAEeGqfYwrZBDe-Q" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_VuO7QPjAEeGqfYwrZBDe-Q" name="JDOHelper">
+    <modelElement href="Flashcards.uml#_qRTzMPi_EeGqfYwrZBDe-Q"/>
+    <visualProperties xmi:id="_Vuk5gPjAEeGqfYwrZBDe-Q" position="2635.0,1038.0" size="-1.0,-1.0" visible="false"/>
+    <stereotypes xmi:id="_VuO7QfjAEeGqfYwrZBDe-Q" name="Reference">
+      <modelElement href="Flashcards.uml#_qRVoYPi_EeGqfYwrZBDe-Q"/>
+    </stereotypes>
+    <visibility xmi:id="_VuO7QvjAEeGqfYwrZBDe-Q" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_VvZY4vjAEeGqfYwrZBDe-Q" name="PersistenceManagerFactory" associationsIn="_VulgkPjAEeGqfYwrZBDe-Q">
+    <modelElement href="Flashcards.uml#_qRWPcPi_EeGqfYwrZBDe-Q"/>
+    <visualProperties xmi:id="_VvuJAPjAEeGqfYwrZBDe-Q" position="-161.0,258.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_VvZY4_jAEeGqfYwrZBDe-Q" name="Reference">
+      <modelElement href="Flashcards.uml#_qRW2gPi_EeGqfYwrZBDe-Q"/>
+    </stereotypes>
+    <visibility xmi:id="_VvZY5PjAEeGqfYwrZBDe-Q" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_VszX4PjAEeGqfYwrZBDe-Q" name="Collection">
+    <modelElement href="Flashcards.uml#_qQ0D8Pi_EeGqfYwrZBDe-Q"/>
+    <visualProperties xmi:id="_VtMZcPjAEeGqfYwrZBDe-Q" position="2355.0,912.0" size="-1.0,-1.0" visible="false"/>
+    <stereotypes xmi:id="_VszX4fjAEeGqfYwrZBDe-Q" name="Reference">
+      <modelElement href="Flashcards.uml#_qQ0rAPi_EeGqfYwrZBDe-Q"/>
+    </stereotypes>
+    <visibility xmi:id="_VszX4vjAEeGqfYwrZBDe-Q" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qrOIAPi_EeGqfYwrZBDe-Q" comments="_qrDI4Pi_EeGqfYwrZBDe-Q" targetConnectionVisual="_qrLrwPi_EeGqfYwrZBDe-Q" name="AddFlight" associationsOut="_KVgvgPjAEeGqfYwrZBDe-Q" generalizations="_KTevMPjAEeGqfYwrZBDe-Q">
+    <modelElement href="Flashcards.uml#_qI-9oPi_EeGqfYwrZBDe-Q"/>
+    <visualProperties xmi:id="_qrPWIPi_EeGqfYwrZBDe-Q" position="1364.0,329.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_qrOIAfi_EeGqfYwrZBDe-Q" label="+"/>
+    <attributes xmi:id="_qrOIAvi_EeGqfYwrZBDe-Q" name="response">
+      <modelElement href="Flashcards.uml#_qT07sPi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_RDd1Q_jAEeGqfYwrZBDe-Q"/>
+      <stereotypes xmi:id="_qrOIA_i_EeGqfYwrZBDe-Q" name="LegacyStyledElement">
+        <modelElement href="Flashcards.uml#_qT1iwPi_EeGqfYwrZBDe-Q"/>
+      </stereotypes>
+      <stereotypes xmi:id="_KWF-UvjAEeGqfYwrZBDe-Q" name="LegacyStyledElement">
+        <modelElement href="Flashcards.uml#_qT1iwPi_EeGqfYwrZBDe-Q"/>
+      </stereotypes>
+      <visibility xmi:id="_qrOIBPi_EeGqfYwrZBDe-Q" label="-"/>
+      <cardinality xmi:id="_qrOIBfi_EeGqfYwrZBDe-Q" label="1" max="1" min="1"/>
+      <type xmi:id="_qrOIBvi_EeGqfYwrZBDe-Q" name="HttpServletResponse">
+        <modelElement href="Flashcards.uml#_qQBZwfi_EeGqfYwrZBDe-Q"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_qrOIB_i_EeGqfYwrZBDe-Q" name="doPostJDO">
+      <modelElement href="Flashcards.uml#_qQEdEPi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_RDecUPjAEeGqfYwrZBDe-Q"/>
+      <visibility xmi:id="_qrOICPi_EeGqfYwrZBDe-Q" label="-"/>
+      <parameters xmi:id="_duYhUPjDEeGqfYwrZBDe-Q" name="f">
+        <modelElement href="Flashcards.uml#_qUjUcfi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_duYhUfjDEeGqfYwrZBDe-Q" name="Flashcard">
+          <modelElement href="Flashcards.uml#_qJqTEPi_EeGqfYwrZBDe-Q"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_qrOIC_i_EeGqfYwrZBDe-Q" name="doPostJPA">
+      <modelElement href="Flashcards.uml#_qQGSQPi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_RDecUfjAEeGqfYwrZBDe-Q"/>
+      <visibility xmi:id="_qrOIDPi_EeGqfYwrZBDe-Q" label="-"/>
+      <parameters xmi:id="_du9JEPjDEeGqfYwrZBDe-Q" name="f">
+        <modelElement href="Flashcards.uml#_qUj7gfi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_du9JEfjDEeGqfYwrZBDe-Q" name="Flashcard">
+          <modelElement href="Flashcards.uml#_qJqTEPi_EeGqfYwrZBDe-Q"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_qrOID_i_EeGqfYwrZBDe-Q" name="doPost">
+      <modelElement href="Flashcards.uml#_qSKHwPi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_RDecUvjAEeGqfYwrZBDe-Q"/>
+      <stereotypes xmi:id="_qrOIEPi_EeGqfYwrZBDe-Q" name="LegacyStyledElement">
+        <modelElement href="Flashcards.uml#_qSL88Pi_EeGqfYwrZBDe-Q"/>
+      </stereotypes>
+      <stereotypes xmi:id="_qrOIEfi_EeGqfYwrZBDe-Q" name="Annotations">
+        <modelElement href="Flashcards.uml#_qSSqoPi_EeGqfYwrZBDe-Q"/>
+      </stereotypes>
+      <visibility xmi:id="_qrOIEvi_EeGqfYwrZBDe-Q" label="+"/>
+      <parameters xmi:id="_qrOIE_i_EeGqfYwrZBDe-Q" name="req">
+        <modelElement href="Flashcards.uml#_qSKu0Pi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qrOIFPi_EeGqfYwrZBDe-Q" name="HttpServletRequest">
+          <modelElement href="Flashcards.uml#_qQALofi_EeGqfYwrZBDe-Q"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_qrOIFfi_EeGqfYwrZBDe-Q" name="resp">
+        <modelElement href="Flashcards.uml#_qSKu0fi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qrOIFvi_EeGqfYwrZBDe-Q" name="HttpServletResponse">
+          <modelElement href="Flashcards.uml#_qQBZwfi_EeGqfYwrZBDe-Q"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qq5X4Pi_EeGqfYwrZBDe-Q" name="GetFlights" generalizations="_KTv08PjAEeGqfYwrZBDe-Q">
+    <modelElement href="Flashcards.uml#_qKZS4Pi_EeGqfYwrZBDe-Q"/>
+    <visualProperties xmi:id="_qrB6wPi_EeGqfYwrZBDe-Q" position="1854.0,234.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_qq5X4fi_EeGqfYwrZBDe-Q" label="+"/>
+    <attributes xmi:id="_qq5X4vi_EeGqfYwrZBDe-Q" defaultValue="&quot;select from &quot;&#xA;&#x9;&#x9;&#x9;+ Flashcard.class.getName()" name="DEFAULT_QUERY" staticAttribute="true">
+      <modelElement href="Flashcards.uml#_qUPLYPi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_RDcAE_jAEeGqfYwrZBDe-Q"/>
+      <visibility xmi:id="_qq5X4_i_EeGqfYwrZBDe-Q" label="-"/>
+      <cardinality xmi:id="_qq5X5Pi_EeGqfYwrZBDe-Q" label="1" max="1" min="1"/>
+      <type xmi:id="_qq5X5fi_EeGqfYwrZBDe-Q" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_qq5X5vi_EeGqfYwrZBDe-Q" name="queryJDO">
+      <modelElement href="Flashcards.uml#_qKeLYPi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_RDcnIPjAEeGqfYwrZBDe-Q"/>
+      <keywords xmi:id="_qq5X5_i_EeGqfYwrZBDe-Q" keyword="generic_container"/>
+      <visibility xmi:id="_qq5X6Pi_EeGqfYwrZBDe-Q" label="-"/>
+      <outParameters xmi:id="_qq5X6fi_EeGqfYwrZBDe-Q">
+        <modelElement href="Flashcards.uml#_qKeycPi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qq5X6vi_EeGqfYwrZBDe-Q" name="Flashcard">
+          <modelElement href="Flashcards.uml#_qJqTEPi_EeGqfYwrZBDe-Q"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_qq5X6_i_EeGqfYwrZBDe-Q" name="query">
+        <modelElement href="Flashcards.uml#_qKeLYfi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qq5X7Pi_EeGqfYwrZBDe-Q" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_qq5X7fi_EeGqfYwrZBDe-Q" name="queryJPA">
+      <modelElement href="Flashcards.uml#_qKgnoPi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_RDcnIfjAEeGqfYwrZBDe-Q"/>
+      <visibility xmi:id="_qq5X7vi_EeGqfYwrZBDe-Q" label="-"/>
+      <outParameters xmi:id="_qq5X7_i_EeGqfYwrZBDe-Q">
+        <modelElement href="Flashcards.uml#_qKhOsfi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qq5X8Pi_EeGqfYwrZBDe-Q" name="Flashcard">
+          <modelElement href="Flashcards.uml#_qJqTEPi_EeGqfYwrZBDe-Q"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_qq5X8fi_EeGqfYwrZBDe-Q" name="query">
+        <modelElement href="Flashcards.uml#_qKhOsPi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qq5X8vi_EeGqfYwrZBDe-Q" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_qq5X8_i_EeGqfYwrZBDe-Q" name="doPost">
+      <modelElement href="Flashcards.uml#_qS5uoPi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_RDcnIvjAEeGqfYwrZBDe-Q"/>
+      <stereotypes xmi:id="_qq5X9Pi_EeGqfYwrZBDe-Q" name="LegacyStyledElement">
+        <modelElement href="Flashcards.uml#_qS68wPi_EeGqfYwrZBDe-Q"/>
+      </stereotypes>
+      <stereotypes xmi:id="_qq5X9fi_EeGqfYwrZBDe-Q" name="Annotations">
+        <modelElement href="Flashcards.uml#_qS8K4Pi_EeGqfYwrZBDe-Q"/>
+      </stereotypes>
+      <visibility xmi:id="_qq5X9vi_EeGqfYwrZBDe-Q" label="#"/>
+      <parameters xmi:id="_qq5X9_i_EeGqfYwrZBDe-Q" name="req">
+        <modelElement href="Flashcards.uml#_qS5uofi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qq5X-Pi_EeGqfYwrZBDe-Q" name="HttpServletRequest">
+          <modelElement href="Flashcards.uml#_qQALofi_EeGqfYwrZBDe-Q"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_qq5X-fi_EeGqfYwrZBDe-Q" name="resp">
+        <modelElement href="Flashcards.uml#_qS5uovi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qq5X-vi_EeGqfYwrZBDe-Q" name="HttpServletResponse">
+          <modelElement href="Flashcards.uml#_qQBZwfi_EeGqfYwrZBDe-Q"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_qq5X-_i_EeGqfYwrZBDe-Q" name="doGet">
+      <modelElement href="Flashcards.uml#_qS_OMPi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_RDdOMPjAEeGqfYwrZBDe-Q"/>
+      <stereotypes xmi:id="_qq5X_Pi_EeGqfYwrZBDe-Q" name="LegacyStyledElement">
+        <modelElement href="Flashcards.uml#_qTAcUPi_EeGqfYwrZBDe-Q"/>
+      </stereotypes>
+      <stereotypes xmi:id="_qq5X_fi_EeGqfYwrZBDe-Q" name="Annotations">
+        <modelElement href="Flashcards.uml#_qTCRgPi_EeGqfYwrZBDe-Q"/>
+      </stereotypes>
+      <visibility xmi:id="_qq5X_vi_EeGqfYwrZBDe-Q" label="+"/>
+      <parameters xmi:id="_qq5X__i_EeGqfYwrZBDe-Q" name="req">
+        <modelElement href="Flashcards.uml#_qS_1QPi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qq5YAPi_EeGqfYwrZBDe-Q" name="HttpServletRequest">
+          <modelElement href="Flashcards.uml#_qQALofi_EeGqfYwrZBDe-Q"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_qq5YAfi_EeGqfYwrZBDe-Q" name="resp">
+        <modelElement href="Flashcards.uml#_qS_1Qfi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qq5YAvi_EeGqfYwrZBDe-Q" name="HttpServletResponse">
+          <modelElement href="Flashcards.uml#_qQBZwfi_EeGqfYwrZBDe-Q"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_qq5YA_i_EeGqfYwrZBDe-Q" name="printPersistenceStandardForm">
+      <modelElement href="Flashcards.uml#_qTEtwPi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_RDdOMfjAEeGqfYwrZBDe-Q"/>
+      <visibility xmi:id="_qq5YBPi_EeGqfYwrZBDe-Q" label="-"/>
+      <parameters xmi:id="_qq5YBfi_EeGqfYwrZBDe-Q" name="query">
+        <modelElement href="Flashcards.uml#_qTEtwfi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qq5YBvi_EeGqfYwrZBDe-Q" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_qq5YB_i_EeGqfYwrZBDe-Q" name="resp">
+        <modelElement href="Flashcards.uml#_qTFU0Pi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qq5YCPi_EeGqfYwrZBDe-Q" name="HttpServletResponse">
+          <modelElement href="Flashcards.uml#_qQBZwfi_EeGqfYwrZBDe-Q"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_qq5YCfi_EeGqfYwrZBDe-Q" name="printAddFlightForm">
+      <modelElement href="Flashcards.uml#_qTHKAPi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_RDd1QPjAEeGqfYwrZBDe-Q"/>
+      <visibility xmi:id="_qq5YCvi_EeGqfYwrZBDe-Q" label="-"/>
+      <parameters xmi:id="_qq5YC_i_EeGqfYwrZBDe-Q" name="query">
+        <modelElement href="Flashcards.uml#_qTHxEPi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qq5YDPi_EeGqfYwrZBDe-Q" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_qq5YDfi_EeGqfYwrZBDe-Q" name="resp">
+        <modelElement href="Flashcards.uml#_qTIYIPi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qq5YDvi_EeGqfYwrZBDe-Q" name="HttpServletResponse">
+          <modelElement href="Flashcards.uml#_qQBZwfi_EeGqfYwrZBDe-Q"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_qq5YD_i_EeGqfYwrZBDe-Q" name="printFlights">
+      <modelElement href="Flashcards.uml#_qTLbcPi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_RDd1QfjAEeGqfYwrZBDe-Q"/>
+      <visibility xmi:id="_qq5YEPi_EeGqfYwrZBDe-Q" label="-"/>
+      <parameters xmi:id="_qq5YEfi_EeGqfYwrZBDe-Q" name="resp">
+        <modelElement href="Flashcards.uml#_qTLbcfi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qq5YEvi_EeGqfYwrZBDe-Q" name="HttpServletResponse">
+          <modelElement href="Flashcards.uml#_qQBZwfi_EeGqfYwrZBDe-Q"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_qq5YE_i_EeGqfYwrZBDe-Q" name="flashcards">
+        <modelElement href="Flashcards.uml#_qTMCgPi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qq5-8Pi_EeGqfYwrZBDe-Q" name="Collection">
+          <modelElement href="Flashcards.uml#_qQ0D8Pi_EeGqfYwrZBDe-Q"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_qq5-8fi_EeGqfYwrZBDe-Q" name="printTableHeader">
+      <modelElement href="Flashcards.uml#_qTOewPi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_RDd1QvjAEeGqfYwrZBDe-Q"/>
+      <visibility xmi:id="_qq5-8vi_EeGqfYwrZBDe-Q" label="-"/>
+      <parameters xmi:id="_qq5-8_i_EeGqfYwrZBDe-Q" name="resp">
+        <modelElement href="Flashcards.uml#_qTPF0Pi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qq5-9Pi_EeGqfYwrZBDe-Q" name="HttpServletResponse">
+          <modelElement href="Flashcards.uml#_qQBZwfi_EeGqfYwrZBDe-Q"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qrYgEPi_EeGqfYwrZBDe-Q" comments="_qrQkQPi_EeGqfYwrZBDe-Q" targetConnectionVisual="_qrVcwPi_EeGqfYwrZBDe-Q" name="UpdateFlight" generalizations="_KTwcAPjAEeGqfYwrZBDe-Q">
+    <modelElement href="Flashcards.uml#_qLcbwPi_EeGqfYwrZBDe-Q"/>
+    <visualProperties xmi:id="_qrZHIPi_EeGqfYwrZBDe-Q" position="2373.0,355.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_qrYgEfi_EeGqfYwrZBDe-Q" label="+"/>
+    <operations xmi:id="_qrYgEvi_EeGqfYwrZBDe-Q" name="doPostJDO">
+      <modelElement href="Flashcards.uml#_qLgGIPi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_RDfDYPjAEeGqfYwrZBDe-Q"/>
+      <visibility xmi:id="_qrYgE_i_EeGqfYwrZBDe-Q" label="-"/>
+      <parameters xmi:id="_qrYgFPi_EeGqfYwrZBDe-Q" name="key">
+        <modelElement href="Flashcards.uml#_qLgGIfi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qrYgFfi_EeGqfYwrZBDe-Q" name="long">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_qrYgFvi_EeGqfYwrZBDe-Q" name="orig">
+        <modelElement href="Flashcards.uml#_qLgtMPi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qrYgF_i_EeGqfYwrZBDe-Q" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_qrYgGPi_EeGqfYwrZBDe-Q" name="dest">
+        <modelElement href="Flashcards.uml#_qLgtMfi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qrYgGfi_EeGqfYwrZBDe-Q" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_qrYgGvi_EeGqfYwrZBDe-Q" name="doPostJPA">
+      <modelElement href="Flashcards.uml#_qLjJcPi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_RDfDYfjAEeGqfYwrZBDe-Q"/>
+      <visibility xmi:id="_qrYgG_i_EeGqfYwrZBDe-Q" label="-"/>
+      <parameters xmi:id="_qrYgHPi_EeGqfYwrZBDe-Q" name="key">
+        <modelElement href="Flashcards.uml#_qLjwgPi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qrYgHfi_EeGqfYwrZBDe-Q" name="long">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_qrYgHvi_EeGqfYwrZBDe-Q" name="orig">
+        <modelElement href="Flashcards.uml#_qLjwgfi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qrYgH_i_EeGqfYwrZBDe-Q" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_qrYgIPi_EeGqfYwrZBDe-Q" name="dest">
+        <modelElement href="Flashcards.uml#_qLjwgvi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qrYgIfi_EeGqfYwrZBDe-Q" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_qrYgIvi_EeGqfYwrZBDe-Q" name="doPost">
+      <modelElement href="Flashcards.uml#_qTdvUPi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_RDfDYvjAEeGqfYwrZBDe-Q"/>
+      <stereotypes xmi:id="_qrYgI_i_EeGqfYwrZBDe-Q" name="LegacyStyledElement">
+        <modelElement href="Flashcards.uml#_qTeWYPi_EeGqfYwrZBDe-Q"/>
+      </stereotypes>
+      <stereotypes xmi:id="_qrYgJPi_EeGqfYwrZBDe-Q" name="Annotations">
+        <modelElement href="Flashcards.uml#_qTfkgPi_EeGqfYwrZBDe-Q"/>
+      </stereotypes>
+      <visibility xmi:id="_qrYgJfi_EeGqfYwrZBDe-Q" label="+"/>
+      <parameters xmi:id="_qrYgJvi_EeGqfYwrZBDe-Q" name="req">
+        <modelElement href="Flashcards.uml#_qTdvUfi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qrYgJ_i_EeGqfYwrZBDe-Q" name="HttpServletRequest">
+          <modelElement href="Flashcards.uml#_qQALofi_EeGqfYwrZBDe-Q"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_qrYgKPi_EeGqfYwrZBDe-Q" name="resp">
+        <modelElement href="Flashcards.uml#_qTdvUvi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qrYgKfi_EeGqfYwrZBDe-Q" name="HttpServletResponse">
+          <modelElement href="Flashcards.uml#_qQBZwfi_EeGqfYwrZBDe-Q"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qqnEAPi_EeGqfYwrZBDe-Q" comments="_qqiykPi_EeGqfYwrZBDe-Q" targetConnectionVisual="_qqlO0Pi_EeGqfYwrZBDe-Q" name="DeleteFlight" generalizations="_KTf9UPjAEeGqfYwrZBDe-Q">
+    <modelElement href="Flashcards.uml#_qJU74Pi_EeGqfYwrZBDe-Q"/>
+    <visualProperties xmi:id="_qqnrEPi_EeGqfYwrZBDe-Q" position="2857.0,355.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_qqnEAfi_EeGqfYwrZBDe-Q" label="+"/>
+    <operations xmi:id="_qqnEAvi_EeGqfYwrZBDe-Q" name="doPostJDO">
+      <modelElement href="Flashcards.uml#_qJX_MPi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_RDax8PjAEeGqfYwrZBDe-Q"/>
+      <visibility xmi:id="_qqnEA_i_EeGqfYwrZBDe-Q" label="-"/>
+      <parameters xmi:id="_qqnEBPi_EeGqfYwrZBDe-Q" name="key">
+        <modelElement href="Flashcards.uml#_qJX_Mfi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qqnEBfi_EeGqfYwrZBDe-Q" name="long">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_qqnEBvi_EeGqfYwrZBDe-Q" name="doPostJPA">
+      <modelElement href="Flashcards.uml#_qJZ0YPi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_RDax8fjAEeGqfYwrZBDe-Q"/>
+      <visibility xmi:id="_qqnEB_i_EeGqfYwrZBDe-Q" label="-"/>
+      <parameters xmi:id="_qqnECPi_EeGqfYwrZBDe-Q" name="key">
+        <modelElement href="Flashcards.uml#_qJZ0Yfi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qqnECfi_EeGqfYwrZBDe-Q" name="long">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_qqnECvi_EeGqfYwrZBDe-Q" name="doPost">
+      <modelElement href="Flashcards.uml#_qSZ_YPi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_RDax8vjAEeGqfYwrZBDe-Q"/>
+      <visibility xmi:id="_qqnEC_i_EeGqfYwrZBDe-Q" label="+"/>
+      <parameters xmi:id="_qqnEDPi_EeGqfYwrZBDe-Q" name="req">
+        <modelElement href="Flashcards.uml#_qSamcPi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qqnEDfi_EeGqfYwrZBDe-Q" name="HttpServletRequest">
+          <modelElement href="Flashcards.uml#_qQALofi_EeGqfYwrZBDe-Q"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_qqnEDvi_EeGqfYwrZBDe-Q" name="resp">
+        <modelElement href="Flashcards.uml#_qSamcfi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qqnED_i_EeGqfYwrZBDe-Q" name="HttpServletResponse">
+          <modelElement href="Flashcards.uml#_qQBZwfi_EeGqfYwrZBDe-Q"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_KVNNgPjAEeGqfYwrZBDe-Q" name="HttpServlet" subclassedBy="_KTevMPjAEeGqfYwrZBDe-Q _KTf9UPjAEeGqfYwrZBDe-Q _KTvN4PjAEeGqfYwrZBDe-Q _KTv08PjAEeGqfYwrZBDe-Q _KTwcAPjAEeGqfYwrZBDe-Q _KTwcAfjAEeGqfYwrZBDe-Q">
+    <modelElement href="Flashcards.uml#_qP_kkPi_EeGqfYwrZBDe-Q"/>
+    <visualProperties xmi:id="_KVceEPjAEeGqfYwrZBDe-Q" position="2516.0,135.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_KVNNgfjAEeGqfYwrZBDe-Q" name="Reference">
+      <modelElement href="Flashcards.uml#_qQALoPi_EeGqfYwrZBDe-Q"/>
+    </stereotypes>
+    <visibility xmi:id="_KVNNgvjAEeGqfYwrZBDe-Q" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qp4rQPi_EeGqfYwrZBDe-Q" comments="_qp1n8Pi_EeGqfYwrZBDe-Q" targetConnectionVisual="_qp2PAPi_EeGqfYwrZBDe-Q" name="GetFlight" generalizations="_KTvN4PjAEeGqfYwrZBDe-Q">
+    <modelElement href="Flashcards.uml#_qKL3gPi_EeGqfYwrZBDe-Q"/>
+    <visualProperties xmi:id="_qp5SUPi_EeGqfYwrZBDe-Q" position="3313.0,355.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_qp4rQfi_EeGqfYwrZBDe-Q" label="+"/>
+    <operations xmi:id="_qp4rQvi_EeGqfYwrZBDe-Q" name="findJPA">
+      <modelElement href="Flashcards.uml#_qKO60Pi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_RDXHkPjAEeGqfYwrZBDe-Q"/>
+      <visibility xmi:id="_qp4rQ_i_EeGqfYwrZBDe-Q" label="-"/>
+      <outParameters xmi:id="_qp4rRPi_EeGqfYwrZBDe-Q">
+        <modelElement href="Flashcards.uml#_qQsvMPi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qp4rRfi_EeGqfYwrZBDe-Q" name="Flashcard">
+          <modelElement href="Flashcards.uml#_qJqTEPi_EeGqfYwrZBDe-Q"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_qp4rRvi_EeGqfYwrZBDe-Q" name="key">
+        <modelElement href="Flashcards.uml#_qKO60fi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qp4rR_i_EeGqfYwrZBDe-Q" name="long">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_qp4rSPi_EeGqfYwrZBDe-Q" name="findJDO">
+      <modelElement href="Flashcards.uml#_qKQwAPi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_RDXuoPjAEeGqfYwrZBDe-Q"/>
+      <visibility xmi:id="_qp4rSfi_EeGqfYwrZBDe-Q" label="-"/>
+      <outParameters xmi:id="_qp4rSvi_EeGqfYwrZBDe-Q">
+        <modelElement href="Flashcards.uml#_qQtWQPi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qp4rS_i_EeGqfYwrZBDe-Q" name="Flashcard">
+          <modelElement href="Flashcards.uml#_qJqTEPi_EeGqfYwrZBDe-Q"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_qp4rTPi_EeGqfYwrZBDe-Q" name="key">
+        <modelElement href="Flashcards.uml#_qKQwAfi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qp4rTfi_EeGqfYwrZBDe-Q" name="long">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_qp4rTvi_EeGqfYwrZBDe-Q" name="doGet">
+      <modelElement href="Flashcards.uml#_qSuvgPi_EeGqfYwrZBDe-Q"/>
+      <visualProperties xmi:id="_RDXuofjAEeGqfYwrZBDe-Q"/>
+      <stereotypes xmi:id="_qp4rT_i_EeGqfYwrZBDe-Q" name="LegacyStyledElement">
+        <modelElement href="Flashcards.uml#_qSxLwPi_EeGqfYwrZBDe-Q"/>
+      </stereotypes>
+      <stereotypes xmi:id="_qp4rUPi_EeGqfYwrZBDe-Q" name="Annotations">
+        <modelElement href="Flashcards.uml#_qSzoAPi_EeGqfYwrZBDe-Q"/>
+      </stereotypes>
+      <visibility xmi:id="_qp4rUfi_EeGqfYwrZBDe-Q" label="+"/>
+      <parameters xmi:id="_qp4rUvi_EeGqfYwrZBDe-Q" name="req">
+        <modelElement href="Flashcards.uml#_qSvWkPi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qp4rU_i_EeGqfYwrZBDe-Q" name="HttpServletRequest">
+          <modelElement href="Flashcards.uml#_qQALofi_EeGqfYwrZBDe-Q"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_qp4rVPi_EeGqfYwrZBDe-Q" name="resp">
+        <modelElement href="Flashcards.uml#_qSvWkfi_EeGqfYwrZBDe-Q"/>
+        <type xmi:id="_qp4rVfi_EeGqfYwrZBDe-Q" name="HttpServletResponse">
+          <modelElement href="Flashcards.uml#_qQBZwfi_EeGqfYwrZBDe-Q"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>
